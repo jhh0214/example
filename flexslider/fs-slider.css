@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@media screen and (min-width:1550px) {
+    .flexslider {margin: 50px auto 140px;}
+
+    .slides > li {position: relative; left: 0; top: 0;}
+
+    .sup-kind-con {
+        position: absolute; right: 0; top: 0;
+        width: 450px; height: 550px;
+        background: #eee; border-radius: 20px;
+        text-align: center;
+    }
+    .sup-kind-con h3 {padding:60px 0 5px; font-size:40px;}
+    .sup-kind-con h4 {font-size:28px; font-weight:500}
+    .sup-kind-con p {width:280px; margin:70px auto}
+
+    .flex-control-nav { /* 블릿 */
+        position: absolute; left: 50%; bottom: -40px;
+        width: 100px;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+
+    .sup-kind-bg1 {
+        width: 1000px; height: 550px;
+        background: url('../imgs/sup-kind-bg1.jpg') no-repeat center center;
+        background-size: cover; border-radius: 20px;
+    }
+
+    .sup-kind-bg2 {
+        width: 1000px; height: 550px;
+        background: url('../imgs/sup-kind-bg2.jpg') no-repeat center center;
+        background-size: cover; border-radius: 20px;
+    }
+
+    .flex-prev, .flex-next {font-size: 42px; font-weight: 700;}
+}
+
+@media screen and (min-width:1150px) and (max-width:1549px) {
+    .flexslider {margin: 40px auto 120px;}
+
+    .slides > li {position: relative; left: 0; top: 0;}
+
+    .sup-kind-con {
+        position: absolute; right: 0; top: 0;
+        width: 350px; height: 430px;
+        background: #eee; border-radius: 20px;
+        text-align: center;
+    }
+    .sup-kind-con h3 {padding:40px 0 5px; font-size:36px;}
+    .sup-kind-con h4 {font-size:24px; font-weight:500}
+    .sup-kind-con p {width:280px; margin:50px auto}
+
+    .flex-control-nav { /* 블릿 */
+        position: absolute; left: 50%; bottom: -40px;
+        width: 100px;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+
+    .sup-kind-bg {width: 700px; height: 430px;      border-radius: 20px;}
+    .sup-kind-bg1 {background: url('../imgs/sup-kind-bg1.jpg') no-repeat center center; background-size: cover;}
+    .sup-kind-bg2 {background: url('../imgs/sup-kind-bg2.jpg') no-repeat center center; background-size: cover;}
+
+    .flex-prev, .flex-next {font-size: 42px; font-weight: 700;}
+}
+
+@media screen and (min-width:750px) and (max-width:1150px) {
+    .flexslider {margin: 30px auto 100px;}
+
+    .slides > li {position: relative; left: 0; top: 0;}
+
+    .sup-kind-con {
+        position: absolute; right: 0; top: 0;
+        width: 280px; height: 330px;
+        background: #eee; border-radius: 20px;
+        text-align: center;
+    }
+    .sup-kind-con h3 {padding:25px 0 5px; font-size:30px;}
+    .sup-kind-con h4 {font-size:20px; font-weight:500}
+    .sup-kind-con p {width:240px; margin:30px auto; font-size: 15px;}
+
+    .flex-control-nav { /* 블릿 */
+        position: absolute; left: 50%; bottom: -40px;
+        width: 100px;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+
+    .sup-kind-bg {width: 420px; height: 330px;      border-radius: 20px;}
+    .sup-kind-bg1 {background: url('../imgs/sup-kind-bg1.jpg') no-repeat center center; background-size: cover;}
+    .sup-kind-bg2 {background: url('../imgs/sup-kind-bg2.jpg') no-repeat center center; background-size: cover;}
+
+    .flex-prev, .flex-next {font-size: 38px; font-weight: 700;}
+}
+
+@media screen and (max-width:750px) {
+    .flexslider {margin: 30px auto 100px; overflow: hidden;}
+
+    .slides > li {position: relative; left: 0; top: 0;}
+
+    .sup-kind-con {
+        position: absolute; left: 50%; top: 10px;
+        width: 280px; height: 330px;
+        background: rgba(238, 238, 238, 0.85); border-radius: 20px;
+        text-align: center;
+        transform: translate(-50%,0);
+    }
+
+    .sup-kind-con h3 {padding:25px 0 5px; font-size:30px;}
+    .sup-kind-con h4 {font-size:20px; font-weight:500;}
+    .sup-kind-con p {width:240px; margin:30px auto; font-size: 15px;}
+
+    .flex-control-nav { /* 블릿 */
+        position: absolute; left: 50%; bottom: -40px;
+        width: 100px;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+
+    .sup-kind-bg {width: 100%; height: 350px;}
+    .sup-kind-bg1 {background: url('../imgs/sup-kind-bg1.jpg') no-repeat center center; background-size: cover;}
+    .sup-kind-bg2 {background: url('../imgs/sup-kind-bg2.jpg') no-repeat center center; background-size: cover;}
+
+    .flex-prev, .flex-next {font-size: 30px; font-weight: 700;}
+} 

@@ -1,0 +1,928 @@
+@charset "utf-8";
+
+/*전역변수*/
+.apt-title {
+    display: flex; justify-content: center; align-items:end;
+    margin: 0 auto 50px;
+}
+.apt-title h3{
+    position: relative;
+    padding: 0; margin: 0;
+    font-size: 46px; text-transform: capitalize;
+}
+.apt-title h3::before {
+    position: absolute; bottom: 2px; right: -20px;
+    content: ''; display: block; 
+    width: 4px; height: 1em; /* 1em은 부모의 폰트 크기 따라감*/
+    background: #85c3f3;
+}
+.apt-title h4{margin-left: 40px; font-size: 20px;}
+
+
+/*전역변수*/
+.tab-content-1,.tab-content-2, .tab-content-3 {left: -100%;}
+/*한방향으로 수정*/ 
+
+
+
+@media screen and (min-width:1550px) {
+    .sub-bn-bg {
+        width: 100%; height: 100vh;
+        background: url('../imgs/bg.jpg')  no-repeat center center;
+        background-size:cover;
+    }
+    .bn-blc {
+        position: absolute ; left: 0; top: 0;
+        width: 100%; height: inherit;
+        background: rgba(0, 0, 0,0.6);
+        z-index: 1;
+    }
+
+    .bn-txt {
+        position: absolute; left: 0; top:45%;
+        width: 100%; 
+        text-align: center;
+        z-index: 1;
+    }
+
+    h2 {margin-bottom: 10px; color: #f6f6f6; font-size: 80px; font-weight: 600;}
+
+    .bn p {color: #f6f6f6; font-size: 30px; font-weight: 500;}
+
+
+  
+
+
+    .apt-mbti-wrap {display: flex; justify-content:space-between;}
+
+    .apt-mbti-con {
+        position:relative;
+        width: 450px; height: 550px;        
+        background: #eee; border-radius:20px;
+        text-align:center;
+    }
+
+    .apt-mbti-con h3 {padding:60px 0 5px; font-size:40px;}
+    .apt-mbti-con h4 {font-size:28px; font-weight:500}
+    .apt-mbti-con p {width: 240px; margin: 70px auto;}
+    
+    .btn {
+            position: absolute; left: 50%;bottom: 70px;
+            transform: translate(-50%, 0);
+        }
+
+
+    .apt-mbti-bg {
+        width: 1000px; height: 550px; margin-bottom: 100px;
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
+        background-size: cover; border-radius: 20px;
+    }
+
+    .apt-tab-wrap {
+        position: relative;width: 1500px;height: 600px;margin: 50px auto;
+        background: #e2e2e2;
+        border-radius: 10px;
+    }
+    
+    input {display: none;}
+    
+    label {
+        position: absolute;top: 20px;width: 230px;height: 60px;
+        color: #2b2e4a;
+        text-align: center;
+        line-height: 60px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: linear-gradient(to bottom, #c9d2ea, #c9d2ea);
+        z-index: 8;
+        border-radius: 10px 10px 0px 0;
+    }
+    
+    .tab-label-1 {left: 20px;}
+    .tab-label-2 {left: 260px;}
+    .tab-label-3 {left: 500px;}
+    
+    input:checked + label {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: #f6f6f6;
+    }
+    
+    .tab-content {
+        position: relative;top: 80px;  
+        width: 1460px;height: 500px;margin: 0px auto;
+        background: #f6f6f6; 
+        border-radius: 0 20px 20px 20px;
+        overflow: hidden;
+    }
+    
+    .tab-content > div {
+        display: flex; justify-content: space-between;
+        position: absolute; width: 100%;height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 {
+        left: 0;
+        opacity: 1;
+        z-index: 7;
+    }
+    
+    .tab-image {
+        width: 880px;height: 440px;margin: 30px 0 30px 30px;
+        border-radius: 20px;
+    }
+    
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: top center;
+    }
+    
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    h3 {padding:40px 0 5px; font-size:40px;}
+    h4 {font-size:28px; font-weight:500}
+
+    .tab-text {
+        position: relative;width: 580px;padding: 20px 0;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .tab-text p {width: 285px;margin: 45px auto;}
+    
+    .btn {
+        position: absolute;left: 50%;bottom: 70px;
+        transform: translate(-50%, 0);
+    }
+
+    
+    .sub-bn-ins-bg{
+        display: flex;  justify-content: center; align-items: center; 
+        position: relative;
+        height:520px;        
+        background:url('../imgs/sub-bn-ins-bg.jpg') no-repeat center center;        
+        background-size: cover;
+               
+    }
+    .sub-bn-ins-txt { 
+        color: #f6f6f6;
+        text-align: center;
+        z-index: 1; 
+       
+    }
+    .sub-bn-ins-txt h3 { font-size:60px;}
+    .sub-bn-ins-txt p { font-size:30px;}
+
+
+    /*올빼미 캐로쏄*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
+
+    /* 풋터 개발중, 완성되면 공유 폴더에 넣을 예정 그리고 조장님 컨펌받고 common.css넣을지 말지 고민, 원래는 common.css가 맞긴맞음*/
+        
+    /*===== footer =====*/
+    /* footer { height: 185px ;padding:60px 0;  background:#7eb8e6; }
+
+   
+    .ft-wrap {
+        position:relative;
+        width:1500px;
+        display:flex; justify-content:space-between;
+        margin:0 auto;
+        color:#f6f6f6;
+    }
+ 
+    h1 {font-size: 35px;}
+    
+    .ft-wrap p {position:absolute;  left:50%; top:50%; 
+        transform: translate(-50%,-50%) ; 
+     }
+    .ft-sns { display:flex;justify-content: center; align-items: center;}
+    .ft-sns a { padding-left:20px; font-size:40px; color:#2c4050; }
+    .ft-sns :first-child a{padding-left:0px;} */
+}
+
+@media screen and (min-width:1150px) and (max-width:1549px) {
+
+    .apt-title h3 {font-size: 46px;}
+    .apt-title h4 {font-size: 20px;}
+
+    .sub-bn-bg {
+        width: 100%; height: 100vh;
+        background: url('../imgs/bg.jpg') no-repeat center center;
+        background-size:cover;
+        z-index: -1;
+    }
+
+    .bn-blc {
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: inherit;
+        background: rgba(0, 0, 0,0.6);
+    }
+
+    .bn-txt {
+        position: absolute; left: 0; top:45%;
+        width: 100%; 
+        text-align: center;
+        z-index: 1;
+    }
+
+    h2 {margin-bottom: 10px; color: #f6f6f6; font-size: 60px; font-weight: 600;}
+
+    .bn p {color: #f6f6f6; font-size: 25px; font-weight: 500;}
+
+
+
+    .apt-title {
+        margin: 0 auto 40px;
+    } /*변경되는 부분*/
+
+
+    .apt-mbti-wrap { display: flex; justify-content:space-between;margin-bottom: 80px;}
+    
+    .apt-mbti-con {
+        position:relative; width: 350px;  height: 430px; 
+        background: #eee; border-radius:20px;
+        text-align:center;
+     }
+    
+    .apt-mbti-con p {width:240px; margin:50px auto;}
+
+    .btn {
+        position: absolute; left: 50%;bottom: 50px;
+        transform: translate(-50%, 0);
+    }
+
+    
+    .apt-mbti-bg {
+        width: 700px; height: 430px; 
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
+        background-size: cover;  border-radius: 10px;
+    }
+
+    .apt-tab-wrap {
+        position: relative;width: 1100px;height: 470px;margin: 40px auto;
+        background: #e2e2e2;
+        border-radius: 10px;
+    }
+    
+    input {display: none;}
+    
+    label {
+        position: absolute;top: 20px;width: 180px;height: 40px;
+        color: #2b2e4a;
+        text-align: center;
+        line-height: 40px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: linear-gradient(to bottom, #c9d2ea, #c9d2ea);
+        z-index: 6;
+        border-radius: 10px 10px 0px 0;
+    }
+    
+    .tab-label-1 {left: 20px;}
+    .tab-label-2 {left: 210px;}
+    .tab-label-3 {left: 400px;}
+    
+    input:checked + label {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: #f6f6f6;
+    }
+    
+    .tab-content {
+        position: relative;top: 60px;  
+        width: 1060px;height: 390px;margin: 0px auto;
+        background: #f6f6f6; 
+        border-radius: 0 20px 20px 20px;
+        overflow: hidden;
+    }
+    
+    .tab-content > div {
+        display: flex; justify-content: space-between;
+        position: absolute; width: 100%;height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 {
+        left: 0;
+        opacity: 1;
+        z-index: 7;
+    }
+    
+    .tab-image {
+        width: 700px;height: 340px;margin: 30px 0 30px 30px;
+        border-radius: 20px;
+    }
+    
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: top center;
+    }
+    
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    h3 {padding:40px 0 5px; font-size:36px;}
+    h4 {font-size:24px; font-weight:500}
+
+    .tab-text {
+        position: relative;width: 365px;padding: 10px 0;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .tab-text p {width: 200px;margin: 20px auto;}
+    
+    .btn {
+        position: absolute;left: 50%;bottom: 50px;
+        transform: translate(-50%, 0);
+    }
+
+    .sub-bn-ins-bg{
+        display: flex;  justify-content: center; align-items: center;
+        position: relative;
+        height:420px;     
+        background:url('../imgs/sub-bn-ins-bg.jpg') no-repeat center center;        
+        background-size: cover;
+               
+    }
+    .sub-bn-ins-txt { 
+        color: #f6f6f6;
+        text-align: center;
+        z-index: 1; 
+       
+    }
+    .sub-bn-ins-txt h3 { font-size:50px;}
+    .sub-bn-ins-txt p { font-size:20px;}
+
+        /*올빼미 캐로쏄*/
+        .card-start-bg {
+            background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-result-bg {
+            background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-recommend-bg{
+            background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-connect-bg {
+            background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+
+            /*===== footer =====*/
+    /*footer { 
+        height: 200px ;padding:70px 0;  background:#7eb8e6; 
+        
+    }
+ 
+    .ft-wrap {
+        width: 1100px;
+        position: relative;
+        display:flex; justify-content:space-between;
+        margin:0 auto; 
+        color:#f6f6f6;
+    }
+  
+    h1 {font-size: 30px; }
+
+    .ft-wrap p {position:absolute;  left:50%; top:50%; 
+        transform: translate(-50%,-50%) ; 
+     }
+
+    .ft-sns { display:flex;justify-content: center; align-items: center;
+    }
+    .ft-sns a { padding-left:15px; font-size:30px; color:#2c4050; }
+    .ft-sns :first-child a{padding-left:0px;}
+*/
+}
+    
+
+
+@media screen and (min-width:750px) and (max-width:1149px) {
+
+    .apt-title h3 {font-size: 40px;}
+    .apt-title h4 {font-size: 18px;}
+
+
+
+    .sub-bn-bg {
+        position: relative;
+        width: 100%; height: 100vh;
+        background: url('../imgs/bg.jpg')  no-repeat center center;
+        background-size:cover;
+        z-index: -1;
+    }
+
+    .bn-blc {
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: inherit;
+        background: rgba(0, 0, 0,0.6);
+    }
+
+    .bn-txt {
+        position: absolute; left: 0; top:45%;
+        width: 100%; 
+        text-align: center;
+    }
+
+    h2 {color: #f6f6f6; font-size: 50px; font-weight: 600;}
+
+    .bn p {color: #f6f6f6; font-size: 20px; font-weight: 500;}
+
+
+    /*차이나는것만 코딩*/
+
+    .apt-title{
+        height: 45px; margin: 0 auto 30px;
+      }
+      
+      .apt-title h3{
+      font-size: 40px;
+      }
+      
+      .apt-title h4{font-size: 18px;}
+
+      
+    .apt-mbti-wrap {
+        display: flex;  justify-content:space-between;
+        margin-bottom: 60px;
+     }
+    
+    .apt-mbti-con {
+        padding:30px 0 5px;/*추가된 코딩*/
+        position:relative;
+        width: 280px; height: 330px; 
+        background: #eee; border-radius:20px;
+        text-align:center;
+     }
+    
+    .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
+    .btn {
+        position: absolute; left: 50%; bottom: 30px;
+        transform: translate(-50%, 0);
+    }
+       
+
+    .apt-mbti-bg {
+        width: 420px; height: 330px; 
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
+        background-size: cover; 
+        border-radius: 20px;
+    }
+	
+	
+    .apt-tab-wrap {
+        position: relative;width: 730px;height: 380px;margin: 55px auto;
+        background: #e2e2e2;
+        border-radius: 10px;
+    }
+    
+    input {display: none;}
+    
+    label {
+        position: absolute;top: 15px;width: 115px;height: 40px;
+        color: #2b2e4a;
+        text-align: center;
+        line-height: 40px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: linear-gradient(to bottom, #c9d2ea, #c9d2ea);
+        z-index:6;
+        border-radius: 10px 10px 0px 0;
+    }
+    
+    .tab-label-1 {left: 20px;}
+    .tab-label-2 {left: 140px;}
+    .tab-label-3 {left: 260px;}
+    
+    input:checked + label {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: #f6f6f6;
+    }
+    
+    .tab-content {
+        position: relative;top: 55px;  
+        width: 690px;height: 310px;margin: 0px auto;
+        background: #f6f6f6; 
+        border-radius: 0 20px 20px 20px;
+        overflow: hidden;
+    }
+    
+    .tab-content > div {
+        display: flex; justify-content: space-between;
+        position: absolute; width: 100%;height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+   
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 {
+        left: 0;
+        opacity: 1;
+        z-index: 7;
+    }
+    
+    .tab-image {
+        width: 400px;height: 250px;margin: 30px 0 30px 30px;
+        border-radius: 20px;
+    }
+    
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: top center;
+    }
+    
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .tab-text {
+        position: relative;width: 255px; margin : 25px 0 0 0;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .tab-text p {width: 200px;margin: 20px auto;}
+    
+    .btn {
+        position: absolute;left: 50%;bottom: 30px;
+        transform: translate(-50%, 0);
+    }
+
+    .sub-bn-ins-bg{
+        display: flex;  justify-content: center; align-items: center;
+        position: relative;
+        height:300px;     
+        background:url('../imgs/sub-bn-ins-bg.jpg') no-repeat center center;        
+        background-size: cover;
+               
+    }
+    .sub-bn-ins-txt { 
+        color: #f6f6f6;
+        text-align: center;
+        z-index: 1; 
+       
+    }
+    .sub-bn-ins-txt h3 { font-size:36px;}
+    .sub-bn-ins-txt p { font-size:18px;}
+
+        /*올빼미 캐로쏄*/
+        .card-start-bg {
+            background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-result-bg {
+            background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-recommend-bg{
+            background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-connect-bg {
+            background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+
+
+
+               /*===== footer =====*/
+   /* footer { 
+        height: 150px ;   padding:35px 0;   background :#7eb8e6; 
+     }
+ 
+    .ft-wrap {
+        width: 730px;
+        position: relative;
+        display:flex; justify-content:space-between;
+        margin:0 auto; 
+        color:#f6f6f6;
+    }
+    
+    .dt {display: none;}
+    
+    .ft-wrap p {font-size: 15px;}
+
+    .ft-sns { display:flex;justify-content: center; align-items: center;
+    }
+    .ft-sns a { padding-left:10px; font-size:25px; color:#2c4050; }
+    .ft-sns :first-child a{padding-left:0px;}
+
+*/
+
+
+}
+
+@media screen and (max-width:749px) {
+
+    .apt-title h3 {font-size: 40px;}
+    .apt-title h4 {font-size: 20px;}
+
+
+    .sub-bn-bg {
+        position: relative; 
+        width: 100%; height: 100vh;
+        background: url('../imgs/bg.jpg') no-repeat center center;
+        background-size:cover;
+        z-index: -1;
+    }
+
+    .bn-blc {
+        position: absolute; left: 0; top: 0;
+        width: 100%; height: inherit;
+        background: rgba(0, 0, 0,0.6);
+    }
+
+    .bn-txt {
+        position: absolute; left: 0; top:30%;
+        width: 100%; 
+        text-align: center;
+        z-index: 1;
+    }
+
+    h2 {
+        width: 420px; margin: 30px auto; color: #f6f6f6; font-size: 60px; font-weight: 600; line-height: 65px;
+    }
+    .bn-txt p {
+        width: 230px; margin: 0 auto;
+        color: #f6f6f6; font-size: 18px; font-weight: 500;
+    }
+
+    .apt-title {
+        margin: 0 auto 30px; 
+        flex-direction: column;
+        align-items: center;
+        text-transform: capitalize; text-align: center;
+    }
+    .apt-title h3{
+        position: relative;
+        padding: 0; margin: 0 auto;
+    }
+    
+    .apt-owl-title h3::before {
+        position: absolute; left: 50%; bottom: -10px;
+        content: ''; display: block; 
+        width: 180px; height: 4px;
+        background: #85c3f3;
+        transform: translate(-50%, 0);
+    }
+    
+    .apt-shot-title h3::before {
+        position: absolute; left: 50%; bottom: -10px;
+        content: ''; display: block; 
+        width: 190px; height: 4px;
+        background: #85c3f3;
+        transform: translate(-50%, 0);
+    }
+    
+    .apt-title h4{margin-top: 20px;}
+    .apt-title h4{margin-left: 0;}
+
+
+
+      
+    .apt-mbti-wrap { position: relative; width: 100%; height: 350px; margin-bottom: 60px;}/* w랑 h안주면 두 박스 영역이 서로 겹친다. 주의 하기 */
+    
+    .apt-mbti-con {
+        position: absolute;  left: 50%; top:10px; 
+        width: 280px; height: 330px; 
+        padding:30px 0 5px;/*추가된 코딩*/
+        text-align:center;
+        background: #eee;
+        border-radius:20px;
+        z-index: 4;
+        transform: translateX(-50%);
+        background: rgba(288,288,288,0.8);
+     }
+    
+    .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
+    .btn {
+        position: absolute; left: 50%;bottom: 30px;
+        transform: translate(-50%, 0);
+    }
+       
+    
+    .apt-mbti-bg {
+        position: absolute; left: 0; top: 0; 
+        width: 100%; height: 350px; 
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
+        background-size: cover; 
+        z-index: 3;
+    }
+
+
+    /* 탭버튼 탭내용 모바일 영역 주석 */
+     .apt-tab-wrap {
+        position: relative;width:350px;height: 600px;margin: 30px auto;
+        background: #e2e2e2;
+        border-radius: 10px;
+    }
+    
+    input {display: none;}
+    
+    label {
+        position: absolute;top: 15px;width: 105px;height: 40px;
+        color: #2b2e4a;
+        text-align: center;
+        line-height: 40px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: linear-gradient(to bottom, #c9d2ea, #c9d2ea);
+        z-index: 6;
+        border-radius: 10px 10px 0px 0;
+    }
+    
+    .tab-label-1 {left: 15px;}
+    .tab-label-2 {left: 122px;}
+    .tab-label-3 {left: 229px;}
+    
+    input:checked + label {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: #f6f6f6;
+    }
+    
+    .tab-content {
+        position: relative;top: 55px;  
+        width:320px;height:530px;margin: 0px auto;
+        background: #f6f6f6; 
+        border-radius: 0 10px 10px 10px;
+        overflow: hidden;
+    }
+    
+    .tab-content > div {
+        position: absolute;
+        width: 100%;height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+
+    #apt-btn:checked ~ .tab-content .tab-content-1,
+    #test-btn:checked ~ .tab-content .tab-content-2,
+    #rco-btn:checked ~ .tab-content .tab-content-3 {
+        left: 0;
+        opacity: 1;
+        z-index: 7;
+    }
+    
+    .tab-image {
+        width:300x;height: 200px;margin:20px 5px;
+        border-radius: 20px;
+    }
+    
+    .tab-content-1 .tab-image {
+        background: url('../imgs/tab01.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: top center;
+    }
+    
+    .tab-content-2 .tab-image {
+        background: url('../imgs/tab02.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .tab-content-3 .tab-image {
+        background: url('../imgs/tab03.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .tab-text {
+        width: 300px; margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .tab-text h3{padding: 5px;}/*common.css와 다르기 때문에 어쩔수 없음*/
+
+    .tab-text p {width: 200px;margin: 20px auto;}
+    
+    .btn {
+        position: absolute;left: 50%;bottom: 30px;
+        transform: translate(-50%, 0);
+    }
+	
+    .sub-bn-ins-bg{
+        display: flex;  justify-content: center; align-items: center;
+        position: relative;
+        height:300px;     
+        background:url('../imgs/sub-bn-ins-bg.jpg') no-repeat center center;        
+        background-size: cover;
+               
+    }
+    .sub-bn-ins-txt { 
+        width: 350px;/*해결책*/
+        color: #f6f6f6;
+        text-align: center;
+        z-index: 1; 
+       
+    }
+    .sub-bn-ins-txt h3 { margin: 20px auto; padding : 0px ; font-size : 36px; line-height: 40px ;}/*common.css와 다르기 때문에 어쩔수 없음*/
+    .sub-bn-ins-txt p {
+        width: 250px;margin: 20px auto; /*common.css와 다르기 때문에 어쩔수 없음*/
+        font-size:18px;
+        line-height: 22px;
+    }
+
+
+   
+
+
+        /*올빼미 캐로쏄*/
+        .card-start-bg {
+            background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-result-bg {
+            background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-recommend-bg{
+            background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        .card-connect-bg {
+            background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+            background-size:cover;
+        }
+        
+
+        
+               /*===== footer =====*/
+    /*footer { 
+        position: relative;
+        width:100%;margin : 0 auto;
+        height: 220px ;   padding:25px 0;   background :#7eb8e6; 
+     }
+ 
+     .ft-sns { 
+        display:flex;justify-content: center; align-items: center;  
+     }
+     .ft-sns a { padding-left:15px; font-size:35px; color:#2c4050; }
+     .ft-sns :first-child a{padding-left:0px;}
+
+     
+    .dt {display: none;}
+    
+    .ft-wrap{ width : 350px ;margin : 0 auto ; 
+     display: flex;  justify-content: center; align-items: center;   
+        
+    }
+
+    .ft-wrap p {font-size: 15px; width : 330px;
+    position: absolute;left: 50%;top: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+}
+    */
+}
