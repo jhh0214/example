@@ -304,6 +304,12 @@ header {
 }
 
 @media screen and (max-width:749px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+        box-sizing: border-box;
+      }
+      
     .dt, .title-long {display:none;}
 
     .dark {width: 100%; height: 60px; background: rgba(0, 0, 0,0.9);}
@@ -314,7 +320,8 @@ header {
     }
 
     #trigger {
-        position: absolute; left: 20px; top: 50%; width: 30px; height: 21px;
+        position: absolute; left: 20px; top: 50%; 
+        width: 30px; height: 21px;
         transform: translate(0, -50%);
         z-index: 31;
     }
