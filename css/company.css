@@ -98,13 +98,13 @@ h4 {font-size: 25px;}
     content: "";
     display: block;
     position: absolute;
-    bottom: 7px; right: -15px; 
+    bottom: 7px; right: -20px; 
     background: #85c3f3;
     height: 1em;
     width: 3px;
 }
 .bf-title h4 {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 .slide-title {
     padding-top: 100px;
@@ -298,10 +298,9 @@ h4 {font-size: 25px;}
 @media screen and (min-width: 750px) and (max-width: 1150px) {
     h3 {font-size: 46px;}
     h4 {font-size: 20px;}
-    .bn-txt h2 {
-        text-transform: capitalize;
-        white-space: pre-line;
+    .bn-txt > h2 {
         font-size: 50px;
+        text-transform: uppercase;
     }
 
     .bn-txt > p {
@@ -390,8 +389,8 @@ h4 {font-size: 25px;}
     }
 
     .bn-txt > h2 {
-        font-size: 50px;
-        text-transform: capitalize;
+        font-size: 60px;
+        text-transform: uppercase;
     }
 
     .bn-txt {
@@ -404,7 +403,7 @@ h4 {font-size: 25px;}
     }
 
     .bn-txt > p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .com-wrap {
@@ -522,6 +521,6 @@ h4 {font-size: 25px;}
         white-space: pre-line;
     }
     .bf-title h4 {
-        left : 0;
+        margin : 0;
     }
 }
