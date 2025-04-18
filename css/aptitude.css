@@ -49,10 +49,6 @@
 
     .bn p {color: #f6f6f6; font-size: 30px; font-weight: 500;}
 
-
-  
-
-
     .apt-mbti-wrap {display: flex; justify-content:space-between;}
 
     .apt-mbti-con {
@@ -152,8 +148,8 @@
         background-size: cover;
     }
 
-    h3 {padding:40px 0 5px; font-size:40px;}
-    h4 {font-size:28px; font-weight:500}
+    .tab-text h3 {padding:40px 0 5px; font-size:40px;}
+    .tab-text h4 {font-size:28px; font-weight:500}
 
     .tab-text {
         position: relative;width: 580px;padding: 20px 0;
@@ -274,7 +270,10 @@
         text-align:center;
      }
     
-    .apt-mbti-con p {width:240px; margin:50px auto;}
+     .apt-mbti-con h3 {font-size:30px;}
+     .apt-mbti-con h4 {font-size:20px; font-weight:500}
+
+     .apt-mbti-con p {width:240px; margin:50px auto;}
 
     .btn {
         position: absolute; left: 50%;bottom: 50px;
@@ -438,15 +437,11 @@
     .ft-sns :first-child a{padding-left:0px;}
 */
 }
-    
-
 
 @media screen and (min-width:750px) and (max-width:1149px) {
 
     .apt-title h3 {font-size: 40px;}
     .apt-title h4 {font-size: 18px;}
-
-
 
     .sub-bn-bg {
         position: relative;
@@ -492,12 +487,15 @@
      }
     
     .apt-mbti-con {
-        padding:30px 0 5px;/*추가된 코딩*/
+        padding-top:25px;
         position:relative;
         width: 280px; height: 330px; 
         background: #eee; border-radius:20px;
         text-align:center;
      }
+
+     .apt-mbti-con h3 {font-size:30px;}
+     .apt-mbti-con h4 {font-size:20px; font-weight:500}
     
     .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
     .btn {
@@ -515,7 +513,7 @@
 	
 	
     .apt-tab-wrap {
-        position: relative;width: 730px;height: 380px;margin: 55px auto;
+        position: relative;width: 730px; height: 380px;margin: 30px auto 60px;
         background: #e2e2e2;
         border-radius: 10px;
     }
@@ -702,6 +700,7 @@
 
     .apt-title {
         margin: 0 auto 30px; 
+
         flex-direction: column;
         align-items: center;
         text-transform: capitalize; text-align: center;
@@ -738,7 +737,7 @@
     .apt-mbti-con {
         position: absolute;  left: 50%; top:10px; 
         width: 280px; height: 330px; 
-        padding:30px 0 5px;/*추가된 코딩*/
+        padding-top:25px;/*추가된 코딩*/
         text-align:center;
         background: #eee;
         border-radius:20px;
@@ -748,6 +747,10 @@
      }
     
     .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
+
+    .apt-mbti-con h3 {font-size:30px;}
+    .apt-mbti-con h4 {font-size:20px; font-weight:500}
+
     .btn {
         position: absolute; left: 50%;bottom: 30px;
         transform: translate(-50%, 0);
@@ -765,7 +768,7 @@
 
     /* 탭버튼 탭내용 모바일 영역 주석 */
      .apt-tab-wrap {
-        position: relative;width:350px;height: 600px;margin: 30px auto;
+        position: relative;width:350px;height: 600px;margin: 30px auto 60px;
         background: #e2e2e2;
         border-radius: 10px;
     }

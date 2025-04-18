@@ -107,7 +107,7 @@ h4 {font-size: 25px;}
     margin-left: 1em;
 }
 .slide-title {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .slide-wrap {
@@ -201,7 +201,6 @@ h4 {font-size: 25px;}
 
 .banner > h3 {
     font-size: 60px;
-    margin-top: -60px;
 }
 
 .banner > h4 {
@@ -217,7 +216,7 @@ h4 {font-size: 25px;}
 
 /* Media Queries */
 @media screen and (min-width: 1150px) and (max-width: 1549px) {
-    h3 {font-size: 36px;}
+    h3 {font-size: 46px;}
     h4 {font-size: 24px;}
     .bn-txt h2 {
         font-size: 60px;
@@ -264,9 +263,7 @@ h4 {font-size: 25px;}
         border-radius: 8px;
     }
 
-    .slide h3 { 
-        padding-top: 80px;
-    }
+
 
     .move {
         flex: 0 0 410px;
@@ -291,7 +288,6 @@ h4 {font-size: 25px;}
 
     .banner > h3 {
         font-size: 50px;
-        margin-top: -60px;
     }
 
     .banner > h4 {
@@ -374,7 +370,6 @@ h4 {font-size: 25px;}
 
     .banner > h3 {
         font-size: 36px;
-        margin-top: -60px;
     }
 
     .banner > h4 {
@@ -389,6 +384,7 @@ h4 {font-size: 25px;}
 @media screen and (max-width: 749px) {
     h3 {font-size: 40px; margin-bottom: 10px;}
     h4 {font-size: 20px;}
+    .bf-title {margin-bottom: 30px;}
     html {
         min-width: 350px;
     }
@@ -433,7 +429,18 @@ h4 {font-size: 25px;}
     }
     .com-con h3 {
         font-size: 30px;
+        margin-top: 0px;
+        padding-top: 25px
+    }
+    .com-con h4 {
+        font-size: 20px;
+    }
+    .com-con p {
+        margin-top: 30px;
+    }
+    .slide-title {
         margin-top: 20px;
+        padding: 0;
     }
     .slide-title,.bf-title,.com-title {
         display: flex;
@@ -505,7 +512,6 @@ h4 {font-size: 25px;}
 
     .banner > h3 {
         font-size: 36px;
-        margin-top: -60px;
     }
 
     .banner > h4 {
