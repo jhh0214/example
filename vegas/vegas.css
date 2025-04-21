@@ -50,10 +50,8 @@ body .vegas-container {
 }
     
 .vegas-video {
-    min-width: 100svw; 
-    min-height: 100svh;
-    width: auto; 
-    height: auto;
+    width: 100svw; 
+    height: 100svh;
 }
 
 body.vegas-container {
