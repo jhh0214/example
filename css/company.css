@@ -85,25 +85,25 @@ h4 {font-size: 25px;}
 }
 
 /* section 02 */
-.bf-title {
+.sub-title {
     display: flex;
     justify-content: center;
     align-items: baseline;
     margin-bottom: 40px;
 }
-.bf-title h3 {
+.sub-title h3 {
     position: relative;
 }
-.bf-title h3::before {
+.sub-title h3::before {
     content: "";
     display: block;
     position: absolute;
-    bottom: 7px; right: -20px; 
+    bottom: 10px; right: -20px; 
     background: #85c3f3;
     height: 1em;
     width: 3px;
 }
-.bf-title h4 {
+.sub-title h4 {
     margin-left: 2em;
 }
 .slide-title {
@@ -383,7 +383,7 @@ h4 {font-size: 25px;}
 @media screen and (max-width: 749px) {
     h3 {font-size: 40px; margin-bottom: 10px;}
     h4 {font-size: 20px;}
-    .bf-title {margin-bottom: 30px;}
+    .sub-title {margin-bottom: 30px;}
     html {
         min-width: 350px;
     }
@@ -447,7 +447,7 @@ h4 {font-size: 25px;}
         margin-top: 20px;
         padding: 0;
     }
-    .slide-title,.bf-title,.com-title {
+    .slide-title,.sub-title,.com-title {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -459,7 +459,7 @@ h4 {font-size: 25px;}
         position: relative;
     }
     
-    .com-title h3::before,.bf-title h3::before,.slide h3::before {
+    .com-title h3::before,.sub-title h3::before,.slide h3::before {
         bottom: -7px; left: 0;
         height: 3px;
         width: 100%;
@@ -526,7 +526,7 @@ h4 {font-size: 25px;}
     .banner > h3 {
         white-space: pre-line;
     }
-    .bf-title h4 {
+    .sub-title h4 {
         margin : 0;
     }
 }

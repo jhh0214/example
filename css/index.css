@@ -7,6 +7,56 @@ header {
     transition: all 0.4s ease-in;  z-index:9;
 }
 
+.bn-txt span {font-family: "Noto Serif", serif;}
+
+h1 a, #main-menu > li, #main-menu > li > a,
+.sub-menu a, .top-menu li, .bn-txt,
+.btn {color: #f6f6f6;}
+
+.txt-b, .sub-menu li:hover a,
+#main-menu > li:hover > a,
+.menu-container a:hover,
+.top-menu a:hover {color: #85c3f3;}
+
+.bn {
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+
+.vegas-slide {filter: brightness(0.6);}
+
+.bn-txt {
+    position: absolute; left: 50%;
+    font-weight: 600; text-align: center;
+    transform: translate(-50%,0);
+    z-index: 2;
+}
+
+.btn-box {
+    position: relative; left: 50%;
+    display: flex;
+    transform: translate(-50%,0);
+    z-index: 3;
+}
+
+.btn-blc {
+    position: absolute;
+    background: rgba(0, 0, 0,0.6);
+    z-index: -1;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    border: 1px #f6f6f6 solid;
+    box-shadow: 0 0 0 1px #f6f6f6 inset;
+    transition: all 0.4s ease-in;
+}
+.btn:hover {
+    color: orange; border: 1px orange solid;
+    box-shadow: 0 0 0 100px rgba(246, 246, 246,0.1) inset;
+}
+
 @keyframes logo {
     0% {transform: translate(0,0)}
     50% {transform: translate(0,-10px)}
@@ -14,449 +64,71 @@ header {
 }
 
 @media screen and (min-width:1550px) {
+    .bn-txt {top: 380px; width: 1500px;}
+    .bn-txt h2 {font-size: 80px; text-transform: capitalize;}
+    .bn-txt p {font-size: 40px;}
 
-    body {height: 100vh;}
-
-    .mb {display:none;}
-
-    header {height: 70px; transition: all 0.6s ease-out;}
-    header:hover {background:rgba(0, 0, 0, 0.85);}
-
-    nav {
-        display: flex; justify-content: space-between; align-items: center;
-        width: 1500px; height: 70px; margin: 0 auto;
-    }
-
-    h1 {padding-bottom: 4px; font-size: 30px;}
-    h1 a {color: #f6f6f6;  transition: all 0.1s ease-in;}
-    .txt-b {display: inline-block; color: #85c3f3;}
-
-    h1:hover a > .txt-b{animation: logo 0.4s ease-in alternate;}
-
-    #main-menu {display: flex; width:600px; margin-left: 25px;}
-    #main-menu > li {position: relative; width:150px; color:#f6f6f6;}
-    #main-menu > li > a {padding: 23px;  color: #f6f6f6; text-align: center;}
-    #main-menu > li:hover > a {color: #85c3f3;}
-
-    .sub-menu {
-        display: none;
-        position:absolute; left:0; top:70px; width: 100%; padding: 10px 0;
-        text-align: center;
-        background:rgba(0, 0, 0, 0.85); border-radius: 0 0 15px 15px;
-        z-index:9;
-    }
-    .sub-menu a {padding:10px 0; color: #f6f6f6;}
-    .sub-menu li:hover a {color: #85c3f3; }
-    .sub-bar {
-        position: absolute; left: 50%; top: 0;
-        width: 0; height: 2px;
-        background: #f6f6f6;
-        transform: translate(-50%,0);
-        transition: all 0.2s ease-in 0.1s;
-    }
-    .sub-act{ width: 80px;}
-
-    .top-menu {display: flex;}
-    .top-menu li {margin-left: 20px;}
-    .top-menu li a {color: #f6f6f6; font-size: 15px;}
-    .top-menu a:hover {color : #85c3f3;}
-    .menu-container a:hover {color: #85c3f3;}
-
-    .bn {
-        position: absolute; left: 0; top: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0,0.5);
-    }
-
-    .bn-txt {
-        position: absolute; left: 50%; top: 380px;
-        width: 1500px;
-        text-align: center; color: #f6f6f6;
-        transform: translate(-50%,0);
-        z-index: 2;
-    }
-    .bn-txt h2 {font-size: 80px; font-weight: 600; text-transform: capitalize;}
-    .bn-txt p {font-size: 40px; font-weight: 600;}
-
-    .btn-box {
-        position: relative; left: 50%; top: 640px;
-        display: flex;
-        width: 1100px;
-        transform: translate(-50%,0);
-        z-index: 3;
-    }
+    .btn-box {top: 640px; width: 1100px;}
     .btn-box li {margin-right: 100px; overflow: hidden;}
     .btn-box li:last-child {margin-right: 0;}
-    .btn-blc {
-        position: absolute;
-        width: 200px; height: 200px;
-        background: rgba(0, 0, 0,0.6);
-        border-radius: 100%;
-        z-index: -1;
-    }
+    .btn-blc {width: 200px; height: 200px; border-radius: 100%;}
     .btn {
-        display: block;
         width: 200px; height: 200px;
-        font-size: 28px; color: #f6f6f6;
-        text-align: center; line-height: 190px;
+        font-size: 28px;line-height: 190px;
         border-radius: 100%;
-        border: 1px #f6f6f6 solid;
-        box-shadow: 0 0 0 1px #f6f6f6 inset;
-        transition: all 0.4s ease-in;
-    }
-    .btn:hover {
-        color: orange; border: 1px orange solid;
-        box-shadow: 0 0 0 100px rgba(246, 246, 246,0.1) inset;
     }
 }
 
 @media screen and (min-width:1150px) and (max-width:1549px) {
-    body {height: 100vh;}
+    .bn-txt {top: 380px; width: 1100px;}
+    .bn-txt h2 {font-size: 70px; text-transform: capitalize;}
+    .bn-txt p {font-size: 35px;}
 
-    .mb {display:none;}
-
-    header {height: 70px; transition: all 0.5s ease-out;}
-    header:hover {background:rgba(0, 0, 0, 0.85);}
-
-    nav {
-        display: flex; justify-content: space-between; align-items: center;
-        width: 1100px; height: 70px; margin: 0 auto;
-    }
-
-    h1 {padding-bottom: 4px; font-size: 30px;}
-    h1 a {color: #f6f6f6;  transition: all 0.1s ease-in;}
-    .txt-b {display: inline-block; color: #85c3f3;}
-
-    h1:hover a > .txt-b{animation: logo 0.4s ease-in alternate;}
-
-    #main-menu {display: flex; width:600px; margin-left: 25px;}
-    #main-menu > li {position: relative; width:150px; color:#f6f6f6;}
-    #main-menu > li > a {padding: 23px;  color: #f6f6f6; text-align: center;}
-    #main-menu > li:hover > a {color: #85c3f3;}
-
-    .sub-menu {
-        display: none;
-        position:absolute; left:0; top:70px; width: 100%; padding: 10px 0;
-        text-align: center;
-        background:rgba(0, 0, 0, 0.85); border-radius: 0 0 15px 15px;
-        z-index:9;
-    }
-    .sub-menu a {padding:10px 0; color: #f6f6f6;}
-    .sub-menu li:hover a {color: #85c3f3; }
-    .sub-bar {
-        position: absolute; left: 50%; top: 0;
-        width: 0; height: 2px;
-        background: #f6f6f6;
-        transform: translate(-50%,0);
-        transition: all 0.2s ease-in 0.1s;
-    }
-    .sub-act{width: 80px;}
-
-    .top-menu {display: flex;}
-    .top-menu li {margin-left: 20px;}
-    .top-menu li a {color: #f6f6f6; font-size: 15px;}
-    .top-menu a:hover {color : #85c3f3;}
-    .menu-container a:hover {color: #85c3f3;}
-
-    .bn {
-        position: absolute; left: 0; top: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0,0.5);
-    }
-
-    .bn-txt {
-        position: absolute; left: 50%; top: 380px;
-        width: 1100px;
-        text-align: center; color: #f6f6f6;
-        transform: translate(-50%,0);
-        z-index: 2;
-    }
-    .bn-txt h2 {font-size: 70px; font-weight: 600; text-transform: capitalize;}
-    .bn-txt p {font-size: 35px; font-weight: 600;}
-
-    .btn-box {
-        position: relative; left: 50%; top: 640px;
-        display: flex;
-        width: 940px;
-        transform: translate(-50%,0);
-        z-index: 3;
-    }
+    .btn-box {top: 640px; width: 940px;}
     .btn-box li {margin-right: 80px; overflow: hidden;}
     .btn-box li:last-child {margin-right: 0;}
-    .btn-blc {
-        position: absolute;
-        width: 175px; height: 175px;
-        background: rgba(0, 0, 0,0.6);
-        border-radius: 100%;
-        z-index: -1;
-    }
+    .btn-blc {width: 175px; height: 175px; border-radius: 100%;}
     .btn {
-        display: block;
         width: 175px; height: 175px;
-        font-size: 24px; color: #f6f6f6;
-        text-align: center; line-height: 170px;
+        font-size: 24px;
+        line-height: 170px;
         border-radius: 100%;
-        border: 1px #f6f6f6 solid;
-        box-shadow: 0 0 0 1px #f6f6f6 inset;
-        transition: all 0.4s ease-in;
-    }
-    .btn:hover {
-        color: orange; border: 1px orange solid;
-        box-shadow: 0 0 0 100px rgba(246, 246, 246,0.1) inset;
     }
 
 }
 
 @media screen and (min-width:750px) and (max-width:1149px) {
-    body {height: 100vh;}
+    .bn-txt {top: 250px; width: 500px;}
+    .bn-txt h2 {font-size: 60px; line-height: 75px; text-transform: uppercase;}
+    .bn-txt p {margin-top: 15px; font-size: 30px; }
 
-    .dt {display:none;}
-
-    .dark {width: 100%; height: 60px; background: rgba(0, 0, 0,0.9);}
-
-    nav {
-        position: relative;
-        width: 100%; height: 65px; margin: 0 auto;
-    }
-
-    #trigger {
-        position: absolute; right: 20px; top: 50%; width: 30px; height: 21px;
-        transform: translate(0, -50%);
-        z-index: 31;
-    }
-
-    #trigger > span {
-        position: absolute; left:0;
-        width:100%; height: 3px; 
-        background: #f6f6f6;
-        transition: all 0.4s ease-in;
-    }
-
-    #trigger > span:nth-child(1) {top:0;}
-    #trigger > span:nth-child(2) {top:50%; margin-top: -1px;}
-    #trigger > span:nth-child(3) {bottom:0;}
-
-    #trigger.acive span:nth-child(1) {transform: rotate(-45deg) translate(-5px,8px)}
-    #trigger.acive span:nth-child(2) {opacity: 0;}
-    #trigger.acive span:nth-child(3) {transform: rotate(45deg) translate(-5px,-8px)}
-
-    h1 {
-        position: absolute; left: 50%; top: 46%;
-        font-size: 30px;
-        transform: translate(-50%, -50%);
-    }
-    h1 a {color: #f6f6f6;}
-    .txt-b {color: #85c3f3;}
-
-    h1:hover a {animation: logo 0.4s ease-in alternate;}
-    
-    #main-menu {
-        position: absolute; left: -100%; top: 0;
-        width:100%; height: 100vh; background: rgba(0, 0, 0,0.95);
-        transition: all 0.4s ease-in;
-        z-index: 30;
-    }
-    #main-menu > li {
-        width:100%; margin: 30px auto;
-        color:#f6f6f6; text-align: center;
-    }
-    #main-menu > li:first-child {margin: 100px auto 0;}
-    #main-menu > li > a {font-size: 36px; color: #f6f6f6;}
-    #main-menu > li:hover > a {color: #85c3f3;}
-    #main-menu.main-act {left: 0;}
-    
-    .sub-menu {
-        display: none;
-        width: 100%; margin-top: 30px;
-        text-align: center;
-        z-index:9;
-    }
-    .sub-menu a {padding: 30px 0; color: #f6f6f6; font-size: 28px;}
-    .sub-menu li {background:rgba(50, 50, 50, 0.85);}
-    .sub-menu li:hover a {color: #85c3f3;}
-    .sub-menu li:hover {background:rgba(50, 50, 50, 0.95);}
-
-    .top-menu {
-        position: absolute; left: 15px; top: 47%;
-        display: flex;
-        transform: translate(0, -50%);
-        z-index: 31;
-    }
-    .top-menu li {margin: 0 15px 0 10px;}
-    .top-menu li a {font-size: 23px;}
-
-    .bn {height: 100vh;}
-
-    .bn {
-        position: absolute; left: 0; top: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0,0.5);
-    }
-
-    .bn-txt {
-        position: absolute; left: 50%; top: 300px;
-        width: 500px;
-        text-align: center; color: #f6f6f6;
-        transform: translate(-50%,0);
-        z-index: 2;
-    }
-    .bn-txt h2 {font-size: 60px; font-weight: 600; line-height: 75px; text-transform: capitalize;}
-    .bn-txt p {margin-top: 15px; font-size: 30px; font-weight: 600;}
-
-    .btn-box {
-        position: relative; left: 50%; top: 600px;
-        display: flex; flex-wrap: wrap;
-        width: 570px;
-        transform: translate(-50%,0);
-        z-index: 3;
-    }
+    .btn-box {top: 600px; flex-wrap: wrap; width: 570px;}
     .btn-box li {margin-right: 70px; overflow: hidden;}
     .btn-box li:last-child, .btn-box li:nth-child(2){margin-right: 0;}
     .btn-box li:nth-child(3), .btn-box li:nth-child(4) {margin-top: 60px;}
-    .btn-blc {
-        position: absolute;
-        width: 250px; height: 80px;
-        background: rgba(0, 0, 0,0.6);
-        border-radius: 40px;
-        z-index: -1;
-    }
+    .btn-blc {width: 250px; height: 80px; border-radius: 40px;}
     .btn {
-        display: block;
         width: 250px; height: 80px;
-        font-size: 24px; color: #f6f6f6;
-        text-align: center; line-height: 75px;
+        font-size: 24px;
+        line-height: 75px;
         border-radius: 40px;
-        border: 1px #f6f6f6 solid;
-        box-shadow: 0 0 0 1px #f6f6f6 inset;
-        transition: all 0.4s ease-in;
-    }
-    .btn:hover {
-        color: orange; border: 1px orange solid;
-        box-shadow: 0 0 0 100px rgba(246, 246, 246,0.1) inset;
     }
 }
 
 @media screen and (max-width:749px) {
-    .dt, .title-long {display:none;}
-
-    .dark {width: 100%; height: 60px; background: rgba(0, 0, 0,0.9);}
-
-    nav {
-        position: relative;
-        width: 100%; height: 65px; margin: 0 auto;
-    }
-
-    #trigger {
-        position: absolute; left: 20px; top: 50%; width: 30px; height: 21px;
-        transform: translate(0, -50%);
-        z-index: 31;
-    }
-
-    #trigger > span {
-        position: absolute; left:0;
-        width:100%; height: 3px; 
-        background: #f6f6f6;
-        transition: all 0.4s ease-in;
-    }
-
-    #trigger > span:nth-child(1) {top:0;}
-    #trigger > span:nth-child(2) {top:50%; margin-top: -1px;}
-    #trigger > span:nth-child(3) {bottom:0;}
-
-    #trigger.acive span:nth-child(1) {transform: rotate(-45deg) translate(-5px,8px)}
-    #trigger.acive span:nth-child(2) {opacity: 0;}
-    #trigger.acive span:nth-child(3) {transform: rotate(45deg) translate(-5px,-8px)}
-
-    h1 {
-        position: absolute; left: 50%; top: 46%;
-        font-size: 30px;
-        transform: translate(-50%, -50%);
-    }
-    h1 a {color: #f6f6f6;}
-    .txt-b {color: #85c3f3;}
-
-    h1:hover a {animation: logo 0.4s ease-in alternate;}
     
-    #main-menu {
-        position: absolute; left: -100%; top: 0;
-        width:100%; height: 100vh; background: rgba(0, 0, 0,0.9);
-        transition: all 0.4s ease-in;
-    }
-    #main-menu > li {
-        width:100%; margin: 30px 0;
-        color:#f6f6f6; text-align: center;
-        transition: all 0.4s ease-in 1s;
-        overflow: hidden;
-    }
-    #main-menu > li:first-child {margin: 100px auto 0;}
-    #main-menu > li > a {font-size: 30px; color: #f6f6f6;}
-    #main-menu > li:hover > a {color: #85c3f3;}
-    #main-menu.main-act {left: 0;}
-    
-    .sub-menu {
-        display: none;
-        width: 100%; margin-top: 30px;        text-align: center;
-        z-index:9;
-    }
-    .sub-menu a {padding: 30px 0; color: #f6f6f6; font-size: 24px;}
-    .sub-menu li {background:rgba(50, 50, 50, 0.85);}
-    .sub-menu li:hover a {color: #85c3f3;}
-    .sub-menu li:hover {background:rgba(50, 50, 50, 0.95);}
+    .bn-txt {top: 150px; width: 400px;}
+    .bn-txt h2 {font-size: 52px; text-transform: uppercase; line-height: 62px; }
+    .bn-txt p {font-size: 28px; margin-top: 10px;}
 
-    .top-menu {
-        position: absolute; right: 10px; top: 47%;
-        display: flex;
-        transform: translate(0, -50%);
-    }
-    .top-menu li {margin: 0 10px 0 15px;}
-    .top-menu li a {font-size: 23px;}
-
-    .bn {height: 100vh;}
-
-    .bn {
-        position: absolute; left: 0; top: 0;
-        width: 100%; height: 100%;
-    }
-    .vegas-slide {filter: brightness(0.6);}
-    .bn-txt {
-        position: absolute; left: 50%; top: 220px;
-        width: 400px;
-        text-align: center; color: #f6f6f6;
-        transform: translate(-50%,0);
-        z-index: 2;
-    }
-    .bn-txt h2 {font-size: 52px; font-weight: 600; text-transform: capitalize; line-height: 62px; }
-    .bn-txt p {font-size: 28px; font-weight: 600; margin-top: 10px;}
-
-    .btn-box {
-        position: relative; left: 50%; top: 500px;
-        display: flex; flex-wrap: wrap;
-        width: 200px;
-        transform: translate(-50%,0);
-        z-index: 3;
-    }
+    .btn-box {top: 450px; flex-wrap: wrap; width: 200px;}
     .btn-box li {margin-top: 30px; overflow: hidden;}
     .btn-box li:first-child {margin-top: 0;}
-    .btn-blc {
-        position: absolute;
-        width: 200px; height: 60;
-        background: rgba(0, 0, 0,0.7);
-        border-radius: 40px;
-        z-index: -1;
-    }
+    .btn-blc {width: 200px; height: 60; border-radius: 40px;}
     .btn {
-        display: block;
         width: 200px; height: 60px;
-        font-size: 24px; color: #f6f6f6;
-        text-align: center; line-height: 55px;
+        font-size: 24px;line-height: 55px;
         border-radius: 40px;
-        border: 1px #f6f6f6 solid;
-        box-shadow: 0 0 0 1px #f6f6f6 inset;
-        transition: all 0.4s ease-in;
-    }
-    .btn:hover {
-        color: orange; border: 1px orange solid;
-        box-shadow: 0 0 0 100px rgba(246, 246, 246,0.1) inset;
     }
 }
 

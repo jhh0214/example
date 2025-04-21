@@ -1,29 +1,6 @@
 @charset "utf-8";
 
-/*전역변수*/
-.apt-title {
-    display: flex; justify-content: center; align-items:end;
-    margin: 0 auto 50px;
-}
-.apt-title h3{
-    position: relative;
-    padding: 0; margin: 0;
-    font-size: 46px; text-transform: capitalize;
-}
-.apt-title h3::before {
-    position: absolute; bottom: 2px; right: -20px;
-    content: ''; display: block; 
-    width: 4px; height: 1em; /* 1em은 부모의 폰트 크기 따라감*/
-    background: #85c3f3;
-}
-.apt-title h4{margin-left: 40px; font-size: 20px;}
-
-
-/*전역변수*/
 .tab-content-1,.tab-content-2, .tab-content-3 {left: -100%;}
-/*한방향으로 수정*/ 
-
-
 
 @media screen and (min-width:1550px) {
     .sub-bn-bg {
@@ -182,7 +159,6 @@
     .sub-bn-ins-txt h3 { font-size:60px;}
     .sub-bn-ins-txt p { font-size:30px;}
 
-
     /*올빼미 캐로쏄*/
     .card-start-bg {
         background:url('../imgs/card-start-bg.jpg') no-repeat center center;
@@ -200,37 +176,10 @@
         background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
         background-size:cover;
     }
-
-
-    /* 풋터 개발중, 완성되면 공유 폴더에 넣을 예정 그리고 조장님 컨펌받고 common.css넣을지 말지 고민, 원래는 common.css가 맞긴맞음*/
-        
-    /*===== footer =====*/
-    /* footer { height: 185px ;padding:60px 0;  background:#7eb8e6; }
-
-   
-    .ft-wrap {
-        position:relative;
-        width:1500px;
-        display:flex; justify-content:space-between;
-        margin:0 auto;
-        color:#f6f6f6;
-    }
  
-    h1 {font-size: 35px;}
-    
-    .ft-wrap p {position:absolute;  left:50%; top:50%; 
-        transform: translate(-50%,-50%) ; 
-     }
-    .ft-sns { display:flex;justify-content: center; align-items: center;}
-    .ft-sns a { padding-left:20px; font-size:40px; color:#2c4050; }
-    .ft-sns :first-child a{padding-left:0px;} */
 }
 
 @media screen and (min-width:1150px) and (max-width:1549px) {
-
-    .apt-title h3 {font-size: 46px;}
-    .apt-title h4 {font-size: 20px;}
-
     .sub-bn-bg {
         width: 100%; height: 100vh;
         background: url('../imgs/bg.jpg') no-repeat center center;
@@ -254,12 +203,6 @@
     h2 {margin-bottom: 10px; color: #f6f6f6; font-size: 60px; font-weight: 600;}
 
     .bn p {color: #f6f6f6; font-size: 25px; font-weight: 500;}
-
-
-
-    .apt-title {
-        margin: 0 auto 40px;
-    } /*변경되는 부분*/
 
 
     .apt-mbti-wrap { display: flex; justify-content:space-between;margin-bottom: 80px;}
@@ -359,9 +302,6 @@
         background: url('../imgs/tab03.jpg') no-repeat center center;
         background-size: cover;
     }
-    
-    h3 {padding:40px 0 5px; font-size:36px;}
-    h4 {font-size:24px; font-weight:500}
 
     .tab-text {
         position: relative;width: 365px;padding: 10px 0;
@@ -393,49 +333,24 @@
     .sub-bn-ins-txt h3 { font-size:50px;}
     .sub-bn-ins-txt p { font-size:20px;}
 
-        /*올빼미 캐로쏄*/
-        .card-start-bg {
-            background:url('../imgs/card-start-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-result-bg {
-            background:url('../imgs/card-result-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-recommend-bg{
-            background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-connect-bg {
-            background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-
-            /*===== footer =====*/
-    /*footer { 
-        height: 200px ;padding:70px 0;  background:#7eb8e6; 
-        
+    /*올빼미 캐로쏄*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
     }
- 
-    .ft-wrap {
-        width: 1100px;
-        position: relative;
-        display:flex; justify-content:space-between;
-        margin:0 auto; 
-        color:#f6f6f6;
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
     }
-  
-    h1 {font-size: 30px; }
-
-    .ft-wrap p {position:absolute;  left:50%; top:50%; 
-        transform: translate(-50%,-50%) ; 
-     }
-
-    .ft-sns { display:flex;justify-content: center; align-items: center;
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
     }
-    .ft-sns a { padding-left:15px; font-size:30px; color:#2c4050; }
-    .ft-sns :first-child a{padding-left:0px;}
-*/
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
 }
 
 @media screen and (min-width:750px) and (max-width:1149px) {
@@ -466,20 +381,6 @@
     h2 {color: #f6f6f6; font-size: 50px; font-weight: 600;}
 
     .bn p {color: #f6f6f6; font-size: 20px; font-weight: 500;}
-
-
-    /*차이나는것만 코딩*/
-
-    .apt-title{
-        height: 45px; margin: 0 auto 30px;
-      }
-      
-      .apt-title h3{
-      font-size: 40px;
-      }
-      
-      .apt-title h4{font-size: 18px;}
-
       
     .apt-mbti-wrap {
         display: flex;  justify-content:space-between;
@@ -510,8 +411,7 @@
         background-size: cover; 
         border-radius: 20px;
     }
-	
-	
+		
     .apt-tab-wrap {
         position: relative;width: 730px; height: 380px;margin: 30px auto 60px;
         background: #e2e2e2;
@@ -605,7 +505,6 @@
         height:300px;     
         background:url('../imgs/sub-bn-ins-bg.jpg') no-repeat center center;        
         background-size: cover;
-               
     }
     .sub-bn-ins-txt { 
         color: #f6f6f6;
@@ -616,50 +515,23 @@
     .sub-bn-ins-txt h3 { font-size:36px;}
     .sub-bn-ins-txt p { font-size:18px;}
 
-        /*올빼미 캐로쏄*/
-        .card-start-bg {
-            background:url('../imgs/card-start-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-result-bg {
-            background:url('../imgs/card-result-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-recommend-bg{
-            background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-connect-bg {
-            background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-
-
-
-               /*===== footer =====*/
-   /* footer { 
-        height: 150px ;   padding:35px 0;   background :#7eb8e6; 
-     }
- 
-    .ft-wrap {
-        width: 730px;
-        position: relative;
-        display:flex; justify-content:space-between;
-        margin:0 auto; 
-        color:#f6f6f6;
+    /*올빼미 캐로쏄*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
     }
-    
-    .dt {display: none;}
-    
-    .ft-wrap p {font-size: 15px;}
-
-    .ft-sns { display:flex;justify-content: center; align-items: center;
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
     }
-    .ft-sns a { padding-left:10px; font-size:25px; color:#2c4050; }
-    .ft-sns :first-child a{padding-left:0px;}
-
-*/
-
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
 
 }
 
@@ -684,54 +556,20 @@
     }
 
     .bn-txt {
-        position: absolute; left: 0; top:30%;
+        position: absolute; left: 0; top:40%;
         width: 100%; 
         text-align: center;
         z-index: 1;
     }
 
     h2 {
-        width: 420px; margin: 30px auto; color: #f6f6f6; font-size: 60px; font-weight: 600; line-height: 65px;
+        width: 350px; margin: 0 auto 30px; color: #f6f6f6; font-size: 50px; font-weight: 600; line-height: 55px;
     }
     .bn-txt p {
         width: 230px; margin: 0 auto;
         color: #f6f6f6; font-size: 18px; font-weight: 500;
     }
-
-    .apt-title {
-        margin: 0 auto 30px; 
-
-        flex-direction: column;
-        align-items: center;
-        text-transform: capitalize; text-align: center;
-    }
-    .apt-title h3{
-        position: relative;
-        padding: 0; margin: 0 auto;
-    }
-    
-    .apt-owl-title h3::before {
-        position: absolute; left: 50%; bottom: -10px;
-        content: ''; display: block; 
-        width: 180px; height: 4px;
-        background: #85c3f3;
-        transform: translate(-50%, 0);
-    }
-    
-    .apt-shot-title h3::before {
-        position: absolute; left: 50%; bottom: -10px;
-        content: ''; display: block; 
-        width: 190px; height: 4px;
-        background: #85c3f3;
-        transform: translate(-50%, 0);
-    }
-    
-    .apt-title h4{margin-top: 20px;}
-    .apt-title h4{margin-left: 0;}
-
-
-
-      
+        
     .apt-mbti-wrap { position: relative; width: 100%; height: 350px; margin-bottom: 60px;}/* w랑 h안주면 두 박스 영역이 서로 겹친다. 주의 하기 */
     
     .apt-mbti-con {
@@ -744,7 +582,7 @@
         z-index: 4;
         transform: translateX(-50%);
         background: rgba(288,288,288,0.8);
-     }
+    }
     
     .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
 
@@ -764,7 +602,6 @@
         background-size: cover; 
         z-index: 3;
     }
-
 
     /* 탭버튼 탭내용 모바일 영역 주석 */
      .apt-tab-wrap {
@@ -876,56 +713,21 @@
         font-size:18px;
         line-height: 22px;
     }
-
-
-   
-
-
-        /*올빼미 캐로쏄*/
-        .card-start-bg {
-            background:url('../imgs/card-start-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-result-bg {
-            background:url('../imgs/card-result-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-recommend-bg{
-            background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        .card-connect-bg {
-            background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
-            background-size:cover;
-        }
-        
-
-        
-               /*===== footer =====*/
-    /*footer { 
-        position: relative;
-        width:100%;margin : 0 auto;
-        height: 220px ;   padding:25px 0;   background :#7eb8e6; 
-     }
- 
-     .ft-sns { 
-        display:flex;justify-content: center; align-items: center;  
-     }
-     .ft-sns a { padding-left:15px; font-size:35px; color:#2c4050; }
-     .ft-sns :first-child a{padding-left:0px;}
-
-     
-    .dt {display: none;}
-    
-    .ft-wrap{ width : 350px ;margin : 0 auto ; 
-     display: flex;  justify-content: center; align-items: center;   
-        
+    /*올빼미 캐로쏄*/
+    .card-start-bg {
+        background:url('../imgs/card-start-bg.jpg') no-repeat center center;
+        background-size:cover;
     }
-
-    .ft-wrap p {font-size: 15px; width : 330px;
-    position: absolute;left: 50%;top: 50%;
-    transform: translate(-50%, -15%);
-    text-align: center;
-}
-    */
+    .card-result-bg {
+        background:url('../imgs/card-result-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-recommend-bg{
+        background:url('../imgs/card-recommend-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
+    .card-connect-bg {
+        background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
+        background-size:cover;
+    }
 }

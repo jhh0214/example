@@ -1,13 +1,14 @@
 $(function(){
+	
 	$("#main-menu li").mouseover(function(){
-        $(this).find(".sub-menu").stop().
+		$(this).find(".sub-menu").stop().
 		slideDown();
 		$(this).find(".sub-bar").stop().
 		addClass("sub-act");
 	});
 
 	$("#main-menu").mouseout(function(){
-        $(this).find(".sub-menu").stop().slideUp();
+		$(this).find(".sub-menu").stop().slideUp();
 		$(this).find(".sub-bar").stop().removeClass("sub-act");
 	});
 

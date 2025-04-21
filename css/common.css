@@ -13,6 +13,8 @@ header {
     border-radius:10px; border: 3px #000 solid;
 }
 
+.dark {width: 100%; height: 70px; background: rgba(0, 0, 0,0.9);}
+
 @keyframes logo {
     0% {transform: translate(0,0)}
     50% {transform: translate(0,-10px)}
@@ -24,11 +26,15 @@ header {
     75% { left:30%; top:-50px; }
     100% { left:-10%; top:-10px; }
 }
+h1 a {color: #f6f6f6;}
+.txt-b {display: inline-block; color: #85c3f3;}
+#main-menu > li:hover > a {color: #85c3f3;}
 
 @media screen and (min-width:1550px) {
     .mb {display:none;}
 
-    header {height: 70px; background: rgba(0, 0, 0,0.75);}
+    header {height: 70px; transition: all 0.6s ease-out;}
+    header:hover {background:rgba(0, 0, 0, 0.85);}
 
     nav {
         display: flex; justify-content: space-between; align-items: center;
@@ -36,15 +42,12 @@ header {
     }
 
     h1 {padding-bottom: 4px; font-size: 30px;}
-    h1 a {color: #f6f6f6;  transition: all 0.1s ease-in;}
-    .txt-b {display: inline-block; color: #85c3f3;}
 
     h1:hover a > .txt-b{animation: logo 0.4s ease-in alternate;}
     
     #main-menu {display: flex; width:600px; margin-left: 25px;}
     #main-menu > li {position: relative; width:150px; color:#f6f6f6;}
     #main-menu > li > a {padding: 23px;  color: #f6f6f6; text-align: center;}
-    #main-menu > li:hover > a {color: #85c3f3;}
 
     .sub-menu {
         display: none;
@@ -70,8 +73,7 @@ header {
     .top-menu a:hover {color : #85c3f3;}
     .menu-container a:hover {color: #85c3f3;}
 
-    section {width:1500px; margin:100px auto;}
-
+    
     /* 나중에 해당 두 태크 다른 곳으로 이동*/
 
     footer {position: relative; left: 0; top: 0; height: 200px; background: #85c3f3;}
@@ -106,12 +108,24 @@ header {
     .i-con-box li .i-con i { transition:all 0.3s ease-in 0.2s; }
     .i-con-box li .i-con:hover i { color:#f6f6f6; transform:scale(1.2); }
     .i-con-box li .i-con:hover::before { left:-10%; top:-10px; animation:btnAni 0.5s 1;}
+	
+	
+	section { width:1500px; margin:100px auto; }
+	
+	/*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 50px; }
+	h3 { font-size: 46px; letter-spacing:-1px; text-transform:uppercase; }
+	h3 span { color:#3980b8; }
+	.sub-title-bar { width:3px; height:30px; margin:20px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:25px; font-size: 20px; }
+	
 }
 
 @media screen and (min-width:1150px) and (max-width:1549px) {
     .mb {display:none;}
 
-    header {height: 70px; background: rgba(0, 0, 0,0.75);}
+    header {height: 70px; transition: all 0.6s ease-out;}
+    header:hover {background:rgba(0, 0, 0, 0.85);}
 
     nav {
         display: flex; justify-content: space-between; align-items: center;
@@ -119,15 +133,13 @@ header {
     }
 
     h1 {padding-bottom: 4px; font-size: 30px;}
-    h1 a {color: #f6f6f6;}
-    .txt-b {color: #85c3f3;}
+
 
     h1:hover a {animation: logo 0.4s ease-in alternate;}
     
     #main-menu {display: flex; width:600px; margin-left: 25px;}
     #main-menu > li {position: relative; width:150px; color:#f6f6f6;}
     #main-menu > li > a {padding: 23px;  color: #f6f6f6; text-align: center;}
-    #main-menu > li:hover > a {color: #85c3f3;}
 
     .sub-menu {
         display: none;
@@ -155,7 +167,7 @@ header {
 
     .bn {height: 100vh;}
 
-    section {width:1100px; margin:80px auto;}
+    
 
     footer {position: relative; left: 0; top: 0; height: 200px; background: #85c3f3;}
 
@@ -187,12 +199,22 @@ header {
     .i-con-box li .i-con i { transition:all 0.3s ease-in 0.2s; }
     .i-con-box li .i-con:hover i { color:#f6f6f6; transform:scale(1.2); }
     .i-con-box li .i-con:hover::before { left:-10%; top:-10px; animation:btnAni 0.5s 1;}
+	
+	
+	section {width:1100px; margin:80px auto;}
+	
+	
+	/*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 40px; }
+	h3 { font-size: 40px; letter-spacing:-1px; text-transform:uppercase; }
+	h3 span { color:#3980b8; }
+	.sub-title-bar { width:3px; height:30px; margin:15px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:20px; font-size: 20px; }
 }
 
 @media screen and (min-width:750px) and (max-width:1149px) {
     .dt {display:none;}
 
-    .dark {width: 100%; height: 60px; background: rgba(0, 0, 0,0.9);}
 
     nav {
         position: relative;
@@ -225,8 +247,6 @@ header {
         font-size: 30px;
         transform: translate(-50%, -50%);
     }
-    h1 a {color: #f6f6f6;}
-    .txt-b {color: #85c3f3;}
 
     h1:hover a {animation: logo 0.4s ease-in alternate;}
     
@@ -242,7 +262,6 @@ header {
     }
     #main-menu > li:first-child {margin: 100px auto 0;}
     #main-menu > li > a {font-size: 36px; color: #f6f6f6;}
-    #main-menu > li:hover > a {color: #85c3f3;}
     #main-menu.main-act {left: 0;}
     
     .sub-menu {
@@ -267,7 +286,7 @@ header {
 
     .bn {height: 100vh;}
     
-    section {width:730px; margin:60px auto;}
+    
 
     footer {position: relative; left: 0; top: 0; height: 200px; background: #85c3f3;}
 
@@ -301,6 +320,17 @@ header {
     .i-con-box li .i-con i { transition:all 0.3s ease-in 0.2s; }
     .i-con-box li .i-con:hover i { color:#f6f6f6; transform:scale(1.2); }
     .i-con-box li .i-con:hover::before { left:-10%; top:-10px; animation:btnAni 0.5s 1;}
+	
+	
+	section {width:730px; margin:60px auto;}
+	
+	
+	/*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 40px; }
+	h3 { font-size: 40px; letter-spacing:-1px; text-transform:uppercase; }
+	h3 span { color:#3980b8; }
+	.sub-title-bar { width:3px; height:30px; margin:15px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:20px; font-size: 20px; }
 }
 
 @media screen and (max-width:749px) {
@@ -308,11 +338,9 @@ header {
         overflow-x: hidden;
         max-width: 100vw;
         box-sizing: border-box;
-      }
+    }
       
-    .dt, .title-long {display:none;}
-
-    .dark {width: 100%; height: 60px; background: rgba(0, 0, 0,0.9);}
+    .dt {display:none;}
 
     nav {
         position: relative;
@@ -346,8 +374,6 @@ header {
         font-size: 30px;
         transform: translate(-50%, -50%);
     }
-    h1 a {color: #f6f6f6;}
-    .txt-b {color: #85c3f3;}
 
     h1:hover a {animation: logo 0.4s ease-in alternate;}
     
@@ -364,12 +390,12 @@ header {
     }
     #main-menu > li:first-child {margin: 100px auto 0;}
     #main-menu > li > a {font-size: 30px; color: #f6f6f6;}
-    #main-menu > li:hover > a {color: #85c3f3;}
     #main-menu.main-act {left: 0;}
     
     .sub-menu {
         display: none;
-        width: 100%; margin-top: 30px;        text-align: center;
+        width: 100%; margin-top: 30px;        
+        text-align: center;
         z-index:9;
     }
     .sub-menu a {padding: 30px 0; color: #f6f6f6; font-size: 24px;}
@@ -387,7 +413,7 @@ header {
 
     .bn {height: 100vh;}
 
-    section {width:100%; margin-top:60px;}
+    
 
     footer {position: relative; left: 0; top: 0; height: 290px; background: #85c3f3;}
 
@@ -421,4 +447,15 @@ header {
     .i-con-box li .i-con i { transition:all 0.3s ease-in 0.2s; }
     .i-con-box li .i-con:hover i { color:#f6f6f6; transform:scale(1.2); }
     .i-con-box li .i-con:hover::before { left:-10%; top:-10px; animation:btnAni 0.5s 1;}
+	
+	
+	section {width:100%; margin-top:60px;}
+	
+	
+	/*=== sub title ===*/
+	.sub-title { width:300px; margin: 0 auto 30px; }
+	h3 { font-size: 38px; letter-spacing:-1px; text-align:center; line-height:40px; text-transform:uppercase; }
+	h3 span { color:#3980b8; }
+	.sub-title-bar { width:70px; height:3px; margin:15px auto; background:#3980b8; }
+	.sub-title p { font-size: 18px; text-align:center; }
 }
