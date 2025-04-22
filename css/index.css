@@ -56,7 +56,7 @@ h1 a, #main-menu > li, #main-menu > li > a,
     color: orange; border: 1px orange solid;
     box-shadow: 0 0 0 100px rgba(246, 246, 246,0.1) inset;
 }
-
+.mb-title {display: none;}
 @keyframes logo {
     0% {transform: translate(0,0)}
     50% {transform: translate(0,-10px)}
@@ -117,8 +117,14 @@ h1 a, #main-menu > li, #main-menu > li > a,
 
 @media screen and (max-width:749px) {
     
-    .bn-txt {top: 150px; width: 400px;}
-    .bn-txt h2 {font-size: 48px; text-transform: uppercase; line-height: 58px; }
+    .bn-txt {top: 150px; width: 350px;}
+    /* .bn-txt h2 {font-size: 48px; text-transform: uppercase; line-height: 58px; } */
+    .bn-txt > h2 {display : none;}
+    .bn-txt > .mb-title {
+        display: inline-block;
+        font-size: 48px; text-transform: uppercase; line-height: 58px; 
+
+    }
     .bn-txt p {font-size: 24px; margin-top: 10px;}
 
     .btn-box {top: 450px; flex-wrap: wrap; width: 200px;}
