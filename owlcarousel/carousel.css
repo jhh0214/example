@@ -30,15 +30,13 @@
 
     .owls-item-contents {position: relative; height:250px;}
     .owls-item-contents h5 {
-        padding-top: 22px; color:rgb(0, 0, 0); text-align:center; font-size: 28px;}
-    .owls-item-contents p {padding:15px 20px 30px; text-align:center; }
+        padding-top: 25px; color:rgb(0, 0, 0); text-align:center; font-size: 28px;}
+    .owls-item-contents p {padding: 15px 35px 30px; text-align:center; }
     .owls-item-contents .btn {
-        display:inline-block; position:absolute;
-        left: 50%; bottom: 25px;
-        text-align: center;
+        position:absolute; left: 50%; bottom: 35px;
+        text-align: center; transform:translateX(-50%);
         transition:all 0.4s ease-in;
-        transform:translate(-50%, 0);
-        overflow:hidden;
+        overflow: hidden;
     }
 
     .act::before { /* 가상 요소 선택자 : button에 자식 요소 생성 */

@@ -5,7 +5,7 @@
 
  let currentIndex = 1;
  const totalSlides = 3;
- const slideWidth = $(".move").outerWidth();  
+ let slideWidth = $(".move").outerWidth();  
  
 
  function updateImage() {
@@ -59,4 +59,9 @@ $('.prev-btn').click(function () {
          }
      }
  });
+
+ $(window).on('resize', function() {
+    slideWidth = $(".move").outerWidth();
+});
+
 });

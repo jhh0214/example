@@ -14,15 +14,16 @@
 body {
     font-family: "Noto Sans KR", serif; font-size:16px; color:#333; font-weight:400;
     background:#fff;
+    overflow-x: hidden;
 }
 
-h1,h2,h4,h5,h6 { font-weight:600; }
-h1  { font-family: "Neuton", serif; }
-h2 { font-family: "Noto Serif", serif; }
-h3 { font-family: "Merienda", cursive; }
+h1,h2,h4,h5,h6 {font-weight:600;}
+h1  {font-family: "Neuton", serif;}
+h2 {font-family: "Noto Serif", serif;}
+h3 {font-family: "Merienda", cursive;}
 
-ul { list-style:none; }
+ul {list-style:none;}
 
-a {display:block; color:#333; text-decoration:none; border:0; outline:0;}
+a , p {display:block; color:#333; text-decoration:none; border:0; outline:0;}
 
-input, button, label, img { display:block; background:none; border:0; outline:0; }
+input, button, label, img {display:block; background:none; border:0; outline:0;}
