@@ -1,29 +1,30 @@
 @charset "utf-8";
 
 /* main banner */
-h3 {font-size: 50px;}
-h4 {font-size: 25px;}
+h3 {font-size: 45px;}
+.sub-title p, h4 {font-size: 20px;}
 
 .bn-bg {
     height: 100svh; 
     background: url('../imgs/main.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
 }
 
-.bn > h2 {
+.txt-wrap {
+    position: absolute; left: 0; top:45%;
+    width: 100%; 
+    text-align: center;
+}
+
+.bn  h2 {
     margin-bottom: 10px;
     color: #f6f6f6;
     font-size: 80px;
     font-weight: 600;
 }
 
-.bn > p {
+.bn  p {
     color: #f6f6f6;
     font-size: 30px;
     font-weight: 500;
@@ -42,16 +43,16 @@ h4 {font-size: 25px;}
     border-radius: 20px;
     text-align: center;
 }
-.com-con h3 {
-    margin: 60px 0 5px;
+.com-con h4 {
+    margin: 70px 0 5px;
     font-size: 40px;
 }
-.com-con h4 {
+.com-con h5 {
     font-size: 28px;
 }
 .com-con p {
     white-space: pre-line;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .com-bg {
@@ -64,33 +65,33 @@ h4 {font-size: 25px;}
 
 .btn {
     position: absolute;
-    bottom: 70px; left: 50%;
+    bottom: 90px; left: 50%;
     transform: translate(-50%,0);
 }
 /* section 02 */
 .sub-title {
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    margin-bottom: 40px;
+    align-items: center;
+    margin: 100px 0 50px;
 }
-.sub-title h3 {
-    position: relative;
+.sub-title .txt-b {
+    color :#3980b8;
 }
-.sub-title h3::before {
+.sub-title p::before {
     content: "";
     display: block;
     position: absolute;
-    bottom: 10px; right: -20px; 
-    background: #85c3f3;
-    height: 1em;
+    bottom: 50%; left: -1em;
+    transform: translate(0,50%); 
+    background: #3980b8;
+    height: 1.2em;
     width: 3px;
 }
-.sub-title h4 {
+.sub-title p {
+    position: relative;
     margin-left: 2em;
-}
-.slide-title {
-    padding-top: 100px;
 }
 
 .slide-wrap {
@@ -133,11 +134,8 @@ h4 {font-size: 25px;}
 }
 
 .move h4 {
+    font-size: 28px;
     text-align: left;
-}
-
-.move p {
-    margin-top: 20px;
 }
 
 .slide-preview {
@@ -175,6 +173,7 @@ h4 {font-size: 25px;}
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 100px;
 }
 
 .banner > * {
@@ -182,11 +181,11 @@ h4 {font-size: 25px;}
     z-index: 1;
 }
 
-.banner > h4 {
+.banner  h4 {
     font-size: 60px;
 }
 
-.banner > h5 {
+.banner  h5 {
     font-size: 30px;
 }
 
@@ -200,21 +199,21 @@ h4 {font-size: 25px;}
 /* Media Queries */
 @media screen and (min-width: 1150px) and (max-width: 1549px) {
     h3 {font-size: 46px;}
-    h4 {font-size: 24px;}
-
-    .bn > h2 {
+    .sub-title p,h4 {font-size: 24px;}
+    .sub-title {margin : 75px 0 40px}
+    .bn  h2 {
         font-size: 60px;
     }
 
-    .bn > p {
+    .bn  p {
         font-size: 30px;
     }
 
-    .com-con h3 {
+    .com-con h4 {
         margin: 40px 0 5px;
         font-size: 36px;
     }
-    .com-con h4 {
+    .com-con h5 {
         font-size: 24px;
     }
     .com-con p {
@@ -235,7 +234,7 @@ h4 {font-size: 25px;}
     }
 
     .btn {
-        bottom: 50px;
+        bottom: 60px;
     }
 
     .slide-img {
@@ -250,61 +249,59 @@ h4 {font-size: 25px;}
         left: 67px;
         border-radius: 8px;
     }
-
-
-
     .move {
         flex: 0 0 410px;
         height: 370px;
         padding: 20px 0 0 50px;
     }
-
     .move p {
         margin-top: -10px;
     }
-
     .slide-preview {
         width: 150px;
         height: 140px;
         right: 67px;
         border-radius: 8px;
     }
-
     .banner {
         height: 400px;
     }
 
-    .banner > h4 {
+    .banner  h4 {
         font-size: 50px;
     }
 
-    .banner > h5 {
+    .banner  h5 {
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 750px) and (max-width: 1150px) {
-    h3 {font-size: 46px;}
-    h4 {font-size: 20px;}
+    h3 {font-size: 40px;}
+    p {font-size: 15px;}
 
-    .bn > h2 {
-        font-size: 50px;
+    .sub-title p,h4 { font-size: 20px;}
+    .sub-title {margin : 55px 0 30px;}
+    .btn {bottom: 30px;}
+
+    .bn  h2 {
+        font-size: 60px;
+        line-height: 65px;
         text-transform: uppercase;
     }
-
-    .bn > p {
+    .bn  h2  .txt-b {display: block;}
+    .bn  p {
         font-size: 20px;
     }
 
-    .com-con h3 {
-        margin: 25px 0 5px;
-        font-size: 25px;
-    }
     .com-con h4 {
+        margin: 25px 0 5px;
+        font-size: 30px;
+    }
+    .com-con h5 {
         font-size: 20px;
     }
     .com-con p {
-        white-space: pre-line;
         margin-top: 30px;
     }
 
@@ -355,90 +352,80 @@ h4 {font-size: 25px;}
         text-align: center;
     }
 
-    .banner > h4 {
-        font-size: 36px;
-        white-space: pre-line;
+    .banner  h4 {
+        font-size: 44px;
     }
 
-    .banner > h5 {
-        font-size: 18px;
+    .banner  h5 {
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 749px) {
-    h3 {font-size: 40px; margin-bottom: 10px;}
-    h4 {font-size: 20px;}
-    .sub-title {margin-bottom: 30px;}
+    h3 {
+        color :#3980b8;
+        font-size: 40px; 
+        line-height: 45px;
+    }
+    p {font-size: 15px;}
+
+    .sub-title p,h4 {font-size: 20px; margin-left: 0;}
+    .sub-title .txt-b {display: none;}
+    .sub-title {margin: 55px 0 30px;}
+    .btn {bottom: 30px;}
+
     html {
         min-width: 350px;
     }
-
-    .bn > h2 {
+    .bn {padding-top: 35vh;}
+    .bn .txt-wrap { top: 35%; }
+    .bn  h2 {
         font-size: 60px;
         text-transform: uppercase;
     }
-
-    .bn > h2 > .txt-none {display: none;}
-    .bn > h2 > span {
+    
+    .bn  h2  .txt-none {display: none;}
+    .bn  h2  span {
         display: block;
         margin-bottom: -20px;
     }
 
-    .bn > p {
+    .bn  p {
         font-size: 18px;
     }
 
-    .com-wrap {
-        display: block;
-        margin-bottom: 60px;
-    }
 
     .com-bg {
-        position: absolute;
         width: 100%;
-        height: 350px;
+        height: 390px;
         border-radius: 0;
     }
-
+    .com-wrap {position: relative;}
     .com-con {
-        top: 10px;
-        margin: auto;
+        position: absolute;
+        left: 50%; top: 50%; transform: translate(-50%,-50%);
         width: 280px;
         height: 330px;
         border-radius: 16px;
         background: rgba(238, 238, 238, 0.9);
     }
-    .com-con h3 {
-        font-size: 30px;
-        margin-top: 0px;
-        padding-top: 25px
-    }
     .com-con h4 {
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    .com-con h5 {
         font-size: 20px;
     }
     .com-con p {
         margin-top: 30px;
     }
-    .slide-title {
-        margin-top: 20px;
-        padding: 0;
-    }
     .sub-title {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 30px;
     }
     
-    .slide h3 {
-        padding-top: 90px;
-        position: relative;
-    }
-    
-    .sub-title h3::before {
-        bottom: -7px; left: 0;
-        height: 3px;
-        width: 100%;
+    .sub-title p::before {
+        display: none;
     }
     .slide {
         margin-bottom: 60px;
@@ -448,11 +435,6 @@ h4 {font-size: 25px;}
         width: 100%;
         height: 300px;
         border-radius: 0px;
-    }
-
-    .slide h3 {
-        margin-left: 15px;
-        padding-top: 30px;
     }
 
     .slide-txt {
@@ -486,20 +468,19 @@ h4 {font-size: 25px;}
     }
 
     .banner {
+        margin-top: 60px;
         height: 300px;
         text-align: center;
     }
 
-    .banner > h4 {
+    .banner  h4 {
         font-size: 36px;
+        margin-bottom: 10px;
+        line-height: 44px;
         white-space: pre-line;
     }
 
-    .banner > h5 {
+    .banner  h5 {
         font-size: 18px;
-    }
-
-    .sub-title h4 {
-        margin : 0;
     }
 }

@@ -3,8 +3,10 @@
 .tab-content-1,.tab-content-2, .tab-content-3 {left: -100%;}
 
 @media screen and (min-width:1550px) {
+
     .bn-apt-bg {
-        height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
+        height: 100vh; margin-bottom: 95px;
+        background: url('../imgs/bg.jpg')  no-repeat center center;
         background-size:cover;  background-attachment:fixed;
     }
     .bn-txt {
@@ -12,8 +14,7 @@
         color: #f6f6f6; text-align: center;
     }
     h2 { font-size: 80px; }
-    .bn p { padding-top:15px; font-size: 26px; color: #f6f6f6;}
-
+    .bn p {padding-top:15px; font-size: 26px; color: #f6f6f6;}
 
 	/*===== MBTI =====*/
     .apt-mbti-wrap { display: flex; justify-content:space-between; margin-bottom:100px; }
@@ -23,18 +24,17 @@
         width: 450px; height: 550px;  text-align:center;   
         background: #eee; border-radius:20px;
     }
-    h4 { padding-top:70px; font-size:40px; }
-    h5 { padding-top:10px; font-size:28px; }
-    .apt-mbti-con p { padding:70px 100px 0; }
-    .btn { position:absolute; left: 50%; bottom:90px; transform: translateX(-50%); }
+    h4 {padding:70px 0 5px; font-size:40px;}
+    h5 {font-size:28px; font-weight:500}
+    .apt-mbti-con p {width:220px; margin:60px auto}
+    .btn {position:absolute; left: 50%; bottom:90px; transform: translateX(-50%);}
 
     .apt-mbti-bg {
         width:1000px; height:550px;
         background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;   
         background-size:cover; 
 		border-radius: 20px;		
-    }
-	
+    }	
 	
 	/*===== METHODS =====*/
     .apt-tab-wrap {
@@ -55,7 +55,7 @@
     input:checked + label { background: #f6f6f6; }
     
     .tab-content {
-        position: relative; top: 80px;  width: 1460px; height:500px; margin:0px auto;
+        position: relative; top: 80px; width: 1460px; height:500px; margin:0px auto;
         background: #f6f6f6; border-radius: 0 20px 20px 20px; overflow: hidden;
     }
     .tab-content > div {
@@ -66,7 +66,7 @@
     #apt-btn:checked ~ .tab-content .tab-content-1,
     #test-btn:checked ~ .tab-content .tab-content-2,
     #rco-btn:checked ~ .tab-content .tab-content-3 { left: 0; opacity: 1; z-index: 2; }    
-    .tab-image { width: 880px;height: 440px; margin: 30px; border-radius: 20px; }
+    .tab-image {width: 880px;height: 440px; margin: 30px 0 30px 30px;border-radius: 20px;}
     .tab-content-1 .tab-image {
         background: url('../imgs/tab01.jpg') no-repeat center center;
         background-size: cover;
@@ -80,26 +80,25 @@
         background-size: cover;
     }
     .tab-text {
-        position: relative;width: 580px;padding: 20px 0;
+        position: relative; margin: 0 auto;
         text-align: center;
         border-radius: 20px;
     }
-    .tab-text p {width: 285px;margin: 45px auto;}
-    .tab-text .btn { top:360px; }
-
+    .tab-text p {width: 285px; margin: 0 auto; padding-top: 60px;}
+    .tab-text .btn {bottom:70px;}
     
 	/*===== banner =====*/
     .apt-ins-bg {
 		position:relative;
-        height:500px; color: #f6f6f6; text-align: center;
+        height:500px; margin-bottom: 95px;
+        color: #f6f6f6; text-align: center;
 		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;  
-        background-size: cover;      
+        background-size:cover;  background-attachment:fixed;
     }
-	.apt-ins-txt { position:absolute;  left:50%; top:50%; transform:translate(-50%, -50%); }
-	h6 { font-size:55px; }
-    .apt-ins-bg p { font-size:26px; color: #f6f6f6; }
+	.apt-ins-txt {position:absolute;  left:50%; width: 100%; top:50%; transform:translate(-50%, -50%);}
+	.apt-ins-txt h6 { font-size:60px; }
+    .apt-ins-bg p { font-size:30px; color: #f6f6f6; }
 	
-
     /*===== test results =====*/
     .card-start-bg {
         background:url('../imgs/card-start-bg.jpg') no-repeat center center;
@@ -117,10 +116,16 @@
         background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
         background-size:cover;
     }
-	
+
+    /*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 50px; }
+	h3 { font-size: 46px; letter-spacing:-1px; text-transform:uppercase; }
+    .sub-title-bar { width:3px; height:30px; margin:20px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:25px; font-size: 20px; }
 }
 
 @media screen and (min-width:1150px) and (max-width:1549px) {
+
     .bn-apt-bg {
         height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
         background-size:cover;  background-attachment:fixed;
@@ -134,17 +139,15 @@
 
 	/*===== MBTI =====*/
     .apt-mbti-wrap { display: flex; justify-content:space-between; margin-bottom:80px; }
-	
-    .apt-mbti-con {
+	.apt-mbti-con {
         position:relative;
         width: 350px; height: 430px; text-align:center;   
         background: #eee; border-radius:20px;
     }
-    h4 { padding-top:50px; font-size:30px; }
-    h5 { padding-top:10px; font-size:20px; }
-    .apt-mbti-con p { padding:50px 70px 0; }
-    .btn { position:absolute; left: 50%; bottom:70px; transform: translateX(-50%); }
-
+    h4 {padding:45px 0 5px; font-size:36px;}
+    h5 {font-size:24px; font-weight:500}
+    .apt-mbti-con p {padding:50px 70px;}
+    .btn { position:absolute; left: 50%; bottom:60px; transform: translateX(-50%); }
     .apt-mbti-bg {
         width:700px; height:430px;
         background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;   
@@ -152,13 +155,11 @@
 		border-radius: 10px;		
     }
 	
-	
 	/*===== METHODS =====*/
     .apt-tab-wrap {
         position: relative; height: 470px;margin: 4px auto;
         background: #e2e2e2; border-radius: 10px;
     }
-    
     input {display: none;}
     label {
         position: absolute; top: 10px;width: 180px;height:50px;
@@ -170,7 +171,6 @@
     .tab-label-2 {left: 210px;}
     .tab-label-3 {left: 400px;}
     input:checked + label { background: #f6f6f6; }
-    
     .tab-content {
         position: relative; top: 60px;  width: 1060px; height:390px; margin:0px auto;
         background: #f6f6f6; border-radius: 0 20px 20px 20px; overflow: hidden;
@@ -183,7 +183,7 @@
     #apt-btn:checked ~ .tab-content .tab-content-1,
     #test-btn:checked ~ .tab-content .tab-content-2,
     #rco-btn:checked ~ .tab-content .tab-content-3 { left: 0; opacity: 1; z-index: 2; }    
-    .tab-image { width: 770px;height: 340px; margin: 30px; border-radius: 20px; }
+    .tab-image {width: 700px;height: 340px; margin: 30px 0 30px 30px; border-radius: 20px; }
     .tab-content-1 .tab-image {
         background: url('../imgs/tab01.jpg') no-repeat center center;
         background-size: cover;
@@ -197,25 +197,23 @@
         background-size: cover;
     }
     .tab-text {
-        position: relative;width: 365px;padding: 10px 0;
+        position: relative; margin: 0 auto;
         text-align: center;
         border-radius: 20px;
     }
     .tab-text p {width: 200px;margin: 20px auto;}
     
-    
-	/*===== banner =====*/
+    /*===== banner =====*/
     .apt-ins-bg {
 		position:relative;
         height:420px; color: #f6f6f6; text-align: center;
 		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
-        background-size: cover; 
+        background-size:cover;  background-attachment:fixed;
     }
-	.apt-ins-txt { position:absolute;  left:50%; top:50%; transform:translate(-50%, -50%); }
-	h6 { font-size:40px; }
-    .apt-ins-bg p { font-size:20px; color: #f6f6f6;}
+	.apt-ins-txt { position:absolute; width: 100%; left:50%; top:50%; transform:translate(-50%, -50%);}
+	.apt-ins-bg h6 {font-size: 50px;}
+    .apt-ins-bg p {font-size:20px; color: #f6f6f6;}
 	
-
     /*===== test results =====*/
     .card-start-bg {
         background:url('../imgs/card-start-bg.jpg') no-repeat center center;
@@ -233,162 +231,108 @@
         background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
         background-size:cover;
     }
+
+    /*=== sub title ===*/
+	.sub-title { display:flex; justify-content:center; margin: 0 auto 40px; }
+	h3 { font-size: 46px; letter-spacing:-1px; text-transform:uppercase; }
+	.sub-title-bar { width:3px; height:30px; margin:15px 20px 0; background:#3980b8; }
+	.sub-title p { padding-top:20px; font-size: 20px; }
 }
 
 @media screen and (min-width:750px) and (max-width:1149px) {
-
-    h4 {font-size: 40px;}
-    h5 {font-size: 18px;}
 
     .bn-apt-bg {
         height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
         background-size:cover;  background-attachment:fixed;
     }
-
     .bn-txt {
-        position: absolute; left: 0; top:45%;
-        width: 100%; 
-        text-align: center;
+        position: absolute; left: 0; top:45%; width: 100%;
+        color: #f6f6f6; text-align: center;
     }
+    h2 { font-size: 56px; }
+    .bn p { padding-top:15px; font-size: 20px; color: #f6f6f6;}
 
-    h2 {color: #f6f6f6; font-size: 50px; font-weight: 600;}
-
-    .bn p {color: #f6f6f6; font-size: 20px; font-weight: 500;}
-      
-    .apt-mbti-wrap {
-        display: flex;  justify-content:space-between;
-        margin-bottom: 60px;
-     }
-    
+	/*===== MBTI =====*/
+    .apt-mbti-wrap { display: flex; justify-content:space-between; margin-bottom:80px; }
+	
     .apt-mbti-con {
-        padding-top:25px;
         position:relative;
-        width: 280px; height: 330px; 
+        width: 280px; height: 330px; text-align:center;   
         background: #eee; border-radius:20px;
-        text-align:center;
-     }
-
-     h4 {font-size:30px;}
-     h5 {font-size:20px; font-weight:500}
-    
-    .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
-    .btn {
-        position: absolute; left: 50%; bottom: 30px;
-        transform: translate(-50%, 0);
     }
-       
+    h4 { padding-top : 30px;  font-size:30px; }
+    h5 { font-size:20px; font-weight:500 }
+    .apt-mbti-con p { padding:30px 30px 0; }
+    .btn { position:absolute; left: 50%; bottom:30px; transform: translateX(-50%); }
 
     .apt-mbti-bg {
-        width: 420px; height: 330px; 
-        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
-        background-size: cover; 
-        border-radius: 20px;
+        width:420px; height:330px;
+        background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;   
+        background-size:cover; 
+		border-radius: 20px;		
     }
 		
+	/*===== METHODS =====*/
     .apt-tab-wrap {
-        position: relative;width: 730px; height: 380px;margin: 30px auto 60px;
-        background: #e2e2e2;
-        border-radius: 10px;
+        position: relative; height: 395px;margin: 4px auto;
+        background: #e2e2e2; border-radius: 10px;
     }
     
     input {display: none;}
-    
     label {
-        position: absolute;top: 15px;width: 115px;height: 40px;
-        color: #2b2e4a;
-        text-align: center;
-        line-height: 40px;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        background: linear-gradient(to bottom, #c9d2ea, #c9d2ea);
-        z-index:6;
-        border-radius: 10px 10px 0px 0;
+        position: absolute; top:15px;width: 130px;height:45px;
+        color: #2b2e4a; text-align: center; line-height: 45px;
+        background: linear-gradient(to bottom, #eee, #c9d2ea); border-radius: 10px 10px 0px 0;
+        z-index: 3;
     }
-    
-    .tab-label-1 {left: 20px;}
-    .tab-label-2 {left: 140px;}
-    .tab-label-3 {left: 260px;}
-    
-    input:checked + label {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        background: #f6f6f6;
-    }
-    
+    .tab-label-1 {left: 15px;}
+    .tab-label-2 {left: 154px;}
+    .tab-label-3 {left: 292px;}
+    input:checked + label { background: #f6f6f6; }
     .tab-content {
-        position: relative;top: 55px;  
-        width: 690px;height: 310px;margin: 0px auto;
-        background: #f6f6f6; 
-        border-radius: 0 20px 20px 20px;
-        overflow: hidden;
+        position: relative; top: 60px;  width: 700px; height:320px; margin:0px auto;
+        background: #f6f6f6; border-radius: 0 20px 20px 20px; overflow: hidden;
     }
-    
     .tab-content > div {
         display: flex; justify-content: space-between;
-        position: absolute; width: 100%;height: 100%;
-        opacity: 0;
+        position: absolute; width: 100%; height: 100%; opacity: 0;
         transition: all 0.5s ease-in-out;
     }
-    
-   
     #apt-btn:checked ~ .tab-content .tab-content-1,
     #test-btn:checked ~ .tab-content .tab-content-2,
-    #rco-btn:checked ~ .tab-content .tab-content-3 {
-        left: 0;
-        opacity: 1;
-        z-index: 7;
-    }
-    
-    .tab-image {
-        width: 400px;height: 250px;margin: 30px 0 30px 30px;
-        border-radius: 20px;
-    }
-    
+    #rco-btn:checked ~ .tab-content .tab-content-3 { left: 0; opacity: 1; z-index: 2; }    
+    .tab-image { width: 400px;height: 250px; margin: 30px; margin-right: 0; border-radius: 20px; }
     .tab-content-1 .tab-image {
         background: url('../imgs/tab01.jpg') no-repeat center center;
         background-size: cover;
-        background-position: top center;
     }
-    
     .tab-content-2 .tab-image {
         background: url('../imgs/tab02.jpg') no-repeat center center;
         background-size: cover;
     }
-    
     .tab-content-3 .tab-image {
         background: url('../imgs/tab03.jpg') no-repeat center center;
         background-size: cover;
     }
-    
     .tab-text {
-        position: relative;width: 255px; margin : 25px 0 0 0;
+        position: relative; margin: 0 auto; padding: 10px 0;
         text-align: center;
         border-radius: 20px;
     }
-    
     .tab-text p {width: 200px;margin: 20px auto;}
     
-    .btn {
-        position: absolute;left: 50%;bottom: 30px;
-        transform: translate(-50%, 0);
+    /*===== banner =====*/
+    .apt-ins-bg {
+		position:relative;
+        height:300px; color: #f6f6f6; text-align: center;
+		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
+        background-size:cover;  background-attachment:fixed;
     }
-
-    .sub-bn-ins-bg{
-        display: flex;  justify-content: center; align-items: center;
-        position: relative;
-        height:300px;     
-        background:url('../imgs/sub-bn-ins-bg.jpg') no-repeat center center;        
-        background-size: cover;
-    }
-    .sub-bn-ins-txt { 
-        color: #f6f6f6;
-        text-align: center;
-        z-index: 1; 
-       
-    }
-    h4 { font-size:36px;}
-    .sub-bn-ins-txt p { font-size:18px;}
-
-    /*올빼미 캐로쏄*/
+	.apt-ins-txt {position:absolute;  left:50%; top:50%; transform:translate(-50%, -50%);}
+	.apt-ins-bg h6 {width: 700px; font-size:44px;}
+    .apt-ins-bg p {font-size:22px; color: #f6f6f6;}
+	
+    /*===== test results =====*/
     .card-start-bg {
         background:url('../imgs/card-start-bg.jpg') no-repeat center center;
         background-size:cover;
@@ -406,102 +350,111 @@
         background-size:cover;
     }
 
+    /*=== sub title ===*/
+	.sub-title {display:flex; justify-content:center; margin: 0 auto 40px;}
+	h3 {font-size: 40px; letter-spacing:-1px; text-transform:uppercase;}
+    .sub-title-bar {width:3px; height:30px; margin:15px 20px 0; background:#3980b8;}
+	.sub-title p {padding-top:20px; font-size: 20px;}
 }
 
 @media screen and (max-width:749px) {
 
     h4 {font-size: 40px;}
     h5 {font-size: 20px;}
-
-
     .bn-apt-bg {
         height: 100vh; background: url('../imgs/bg.jpg')  no-repeat center center;
         background-size:cover;  background-attachment:fixed;
     }
-
+    .dt, .tb {display: none;}
      .bn-txt {
         position: absolute; left: 0; top:40%;
         width: 100%; 
         text-align: center;
         z-index: 1;
     }
-
-    h2 {
-        width: 350px; margin: 0 auto 30px; color: #f6f6f6; font-size: 40px; font-weight: 600; line-height: 45px;
+    h2 { 
+        margin: 0 auto 15px; color: #f6f6f6; 
+        font-size: 42px; font-weight: 600; line-height: 44px;
+        text-transform: uppercase;
     }
     .bn-txt p {
         width: 230px; margin: 0 auto;
         color: #f6f6f6; font-size: 18px; font-weight: 500;
     }
-        
-    .apt-mbti-wrap { position: relative; width: 100%; height: 350px; margin-bottom: 60px;}/* w랑 h안주면 두 박스 영역이 서로 겹친다. 주의 하기 */
     
+     /*===== MBTI =====*/
+    .apt-mbti-wrap { position: relative; width: 100%; height: 390px; margin-bottom: 60px;}
     .apt-mbti-con {
-        position: absolute;  left: 50%; top:10px; 
-        width: 280px; height: 330px; 
-        padding-top:25px;/*추가된 코딩*/
+        position: absolute;  left: 50%; top: 30px ;  
+        width: 280px; height: 330px;
+        padding-top:25px;
         text-align:center;
         background: #eee;
         border-radius:20px;
         z-index: 4;
         transform: translateX(-50%);
         background: rgba(288,288,288,0.8);
-    }
-    
+    }    
     .apt-mbti-con p {width:240px; margin:30px auto; font-size: 15px;}
-
     h4 {font-size:30px;}
     h5 {font-size:20px; font-weight:500}
-
     .btn {
         position: absolute; left: 50%;bottom: 30px;
         transform: translate(-50%, 0);
-    }
-       
-    
+    }       
     .apt-mbti-bg {
         position: absolute; left: 0; top: 0; 
-        width: 100%; height: 350px; 
+        width: 100%; height: 100%;
         background: url('../imgs/apt-mbti-bg.jpg') no-repeat center center;  
         background-size: cover; 
         z-index: 3;
     }
 
-    /* 탭버튼 탭내용 모바일 영역 주석 */
-     .apt-tab-wrap {
-        position: relative;width:350px;height: 600px;margin: 30px auto 60px;
+    /*===== METHODS =====*/
+   
+    input {display: none;}
+    
+    .apt-tab-wrap {
+        position: relative;
+        width: 360px;    /* 최대 350px로 조정 */
+        height: 625px;   /* 높이도 약간 늘림 */
+        margin: 30px auto 60px;
         background: #e2e2e2;
         border-radius: 10px;
     }
     
-    input {display: none;}
-    
+    /* 탭 버튼 스타일 조정 */
     label {
-        position: absolute;top: 15px;width: 105px;height: 40px;
+        position: absolute;
+        top: 15px;
+        width: 107px;    /* 버튼 너비 조정 */
+        height: 60px;    /* 버튼 높이 */
         color: #2b2e4a;
         text-align: center;
-        line-height: 40px;
+        line-height: 60px;
         text-transform: uppercase;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        background: linear-gradient(to bottom, #c9d2ea, #c9d2ea);
+        
+        background: linear-gradient(to bottom, #eee, #c9d2ea);
         z-index: 6;
         border-radius: 10px 10px 0px 0;
+        font-size: 16px;
+        font-weight: 500;
     }
     
+    /* 버튼 위치 조정 - 비율에 맞게 재배치 */
     .tab-label-1 {left: 15px;}
-    .tab-label-2 {left: 122px;}
-    .tab-label-3 {left: 229px;}
+    .tab-label-2 {left: 126px;}
+    .tab-label-3 {left: 238px;}
     
-    input:checked + label {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        background: #f6f6f6;
-    }
-    
+    /* 탭 콘텐츠 영역 조정 */
     .tab-content {
-        position: relative;top: 55px;  
-        width:320px;height:530px;margin: 0px auto;
-        background: #f6f6f6; 
-        border-radius: 0 10px 10px 10px;
+        position: relative;
+        top: 75px;       /* 버튼 아래로 충분한 공간 확보 */
+        width: 330px;    /* 컨테이너보다 약간 작게 */
+        height: 535px;   /* 컨테이너에 맞게 조정 */
+        margin: 0 auto;
+        background: #f6f6f6;
+        border-radius: 0 0px 10px 10px;
         overflow: hidden;
     }
     
@@ -510,74 +463,50 @@
         width: 100%;height: 100%;
         opacity: 0;
         transition: all 0.5s ease-in-out;
-    }
-    
-
+    }    
     #apt-btn:checked ~ .tab-content .tab-content-1,
     #test-btn:checked ~ .tab-content .tab-content-2,
     #rco-btn:checked ~ .tab-content .tab-content-3 {
         left: 0;
         opacity: 1;
         z-index: 7;
-    }
-    
+    }    
     .tab-image {
         width:300x;height: 200px;margin:20px 5px;
         border-radius: 20px;
     }
-    
     .tab-content-1 .tab-image {
         background: url('../imgs/tab01.jpg') no-repeat center center;
         background-size: cover;
-        background-position: top center;
-    }
-    
+     }
     .tab-content-2 .tab-image {
         background: url('../imgs/tab02.jpg') no-repeat center center;
         background-size: cover;
     }
-    
     .tab-content-3 .tab-image {
         background: url('../imgs/tab03.jpg') no-repeat center center;
         background-size: cover;
     }
-    
     .tab-text {
         width: 300px; margin: 0 auto;
         text-align: center;
         border-radius: 20px;
     }
-	
-    h4 {padding: 5px;}/*common.css와 다르기 때문에 어쩔수 없음*/
+	h4 {padding: 5px;}
     .tab-text p {width: 200px;margin: 20px auto;}
-    
-    .btn {
-        position: absolute;left: 50%;bottom: 30px;
-        transform: translate(-50%, 0);
-    }
 	
-    .sub-bn-ins-bg{
-        display: flex;  justify-content: center; align-items: center;
-        position: relative;
-        height:300px;     
-        background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
-        background-size: cover;
-               
+    /*===== banner =====*/
+    .apt-ins-bg {
+		position:relative;
+        height:300px; color: #f6f6f6; text-align: center;
+		background:url('../imgs/apt-ins-bg.jpg') no-repeat center center;        
+        background-size:cover;  background-attachment:fixed;
     }
-    .sub-bn-ins-txt { 
-        width: 350px;/*해결책*/
-        color: #f6f6f6;
-        text-align: center;
-        z-index: 1; 
-       
-    }
-    h4 { margin: 20px auto; padding : 0px ; font-size : 36px; line-height: 40px ;}/*common.css와 다르기 때문에 어쩔수 없음*/
-    .sub-bn-ins-txt p {
-        width: 250px;margin: 20px auto; /*common.css와 다르기 때문에 어쩔수 없음*/
-        font-size:18px;
-        line-height: 22px;
-    }
-    /*올빼미 캐로쏄*/
+	.apt-ins-txt {position:absolute;  left:50%; top:50%; transform:translate(-50%, -50%);}
+    .apt-ins-bg	h6 {width: 330px;  font-size:36px; line-height: 44px; margin: 0 auto; padding-bottom: 10px;}
+    .apt-ins-bg p {width: 330px; font-size:18px;color: #f6f6f6;}
+
+      /*===== test results =====*/
     .card-start-bg {
         background:url('../imgs/card-start-bg.jpg') no-repeat center center;
         background-size:cover;
@@ -594,4 +523,14 @@
         background:url('../imgs/card-connect-bg.jpg') no-repeat center center;
         background-size:cover;
     }
-}
+    
+    /*=== sub title ===*/
+        .sub-title {width:300px; margin: 0 auto 30px;}
+        h3 {
+            padding-bottom: 5px;
+            font-size: 38px; color:#3980b8; letter-spacing:-1px;
+            text-align:center; line-height:40px;
+            text-transform:uppercase; 
+        }
+        .sub-title p { font-size: 18px; text-align:center;}
+ }

@@ -23,9 +23,7 @@
         background: #eee; border-radius: 20px;
         text-align: center;
     }
-    .sup-kind-con h4 {padding:60px 0 5px; font-size:40px;}
-    .sup-kind-con h5 {font-size:28px; font-weight:500}
-    .sup-kind-con p {width:280px; margin:70px auto}
+    .sup-kind-con p {width:240px; margin:70px auto}
 
     .flex-control-nav { /* 블릿 */
         position: absolute; left: 50%; bottom: -40px;
@@ -51,7 +49,7 @@
     }
     .sup-kind-con h4 {padding:40px 0 5px; font-size:36px;}
     .sup-kind-con h5 {font-size:24px; font-weight:500}
-    .sup-kind-con p {width:280px; margin:50px auto}
+    .sup-kind-con p {width:240px; margin:50px auto}
 
     .flex-control-nav { /* 블릿 */
         position: absolute; left: 50%; bottom: -40px;
@@ -78,7 +76,7 @@
     }
     .sup-kind-con h4 {padding:25px 0 5px; font-size:30px;}
     .sup-kind-con h5 {font-size:20px; font-weight:500}
-    .sup-kind-con p {width:240px; margin:30px auto; font-size: 15px;}
+    .sup-kind-con p {width:220px; margin:30px auto; font-size: 15px;}
 
     .flex-control-nav { /* 블릿 */
         position: absolute; left: 50%; bottom: -40px;
@@ -93,12 +91,12 @@
 }
 
 @media screen and (max-width:750px) {
-    .flexslider {margin: 30px auto 100px; overflow: hidden;}
+    .flexslider {margin: 0 auto 60px; overflow: hidden;}
 
     .slides > li {position: relative; left: 0; top: 0;}
 
     .sup-kind-con {
-        position: absolute; left: 50%; top: 10px;
+        position: absolute; left: 50%; top: 30px;
         width: 280px; height: 330px;
         background: rgba(238, 238, 238, 0.85); border-radius: 20px;
         text-align: center;
@@ -107,7 +105,7 @@
 
     .sup-kind-con h4 {padding:25px 0 5px; font-size:30px;}
     .sup-kind-con h5 {font-size:20px; font-weight:500;}
-    .sup-kind-con p {width:240px; margin:30px auto; font-size: 15px;}
+    .sup-kind-con p {width:220px; margin:30px auto; font-size: 15px;}
 
     .flex-control-nav { /* 블릿 */
         position: absolute; left: 50%; bottom: -40px;
@@ -116,7 +114,7 @@
         transform: translate(-50%, 0);
     }
 
-    .sup-kind-bg {width: 100%; height: 350px; border-radius: 0;}
+    .sup-kind-bg {width: 100%; height: 390px; border-radius: 0;}
 
     .flex-prev, .flex-next {font-size: 30px; font-weight: 700;}
 } 

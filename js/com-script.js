@@ -33,7 +33,7 @@ $('.prev-btn').click(function () {
  $('.next-btn').click(function () {
      currentIndex = currentIndex === totalSlides ? 1 : currentIndex + 1;
      updateImage();
-     $('.slide-title>h4').text(titles[currentIndex - 1]);
+     $('.slide-title>p').text(titles[currentIndex - 1]);
      $(".txt-list").stop().animate({ "marginLeft": "-" + slideWidth + "px" }, 500, function () {
          $(".txt-list > div:first").appendTo(".txt-list");
          $(".txt-list").css({ "marginLeft": "0" });

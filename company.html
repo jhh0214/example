@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company - Fine Work</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="textillate/animate.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
     <link rel="stylesheet" href="owlcarousel/carousel.css">
-    <link rel="stylesheet" href="css/common3.css">
-    <link rel="stylesheet" href="css/company.css">
-    <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
     <script src="owlcarousel/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/com-script.js"></script>
+	<script src="textillate/jquery.textillate.js"></script>
+    <script src="textillate/jquery.fittext.js"></script>
+    <script src="textillate/jquery.lettering.js"></script>
 </head>
 <body>
     <header>
@@ -32,41 +35,42 @@
             
             <ul id="main-menu">
                 <li>
-                    <a href="company.html">기업 소개</a>
+                    <a href="#">기업 소개</a>
                     <ul class="sub-menu">
                         <div class="sub-bar dt"></div>               
                         <li><a href="company.html">개요 및 역사</a></li>
-                        <li><a href="company.html">투자 정보</a></li>
-                        <li><a href="company.html">재무 정보</a></li>
+                        <li><a href="#">투자 정보</a></li>
+                        <li><a href="#">재무 정보</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="support.html">취업 지원</a>
+                    <a href="#">취업 지원</a>
                     <ul class="sub-menu">
                         <div class="sub-bar dt"></div>
                         <li><a href="support.html">취업 지원금</a></li>
-                        <li><a href="support.html">취업 후기</a></li>
-                        <li><a href="support.html">포트폴리오</a></li>
+                        <li><a href="#">취업 후기</a></li>
+                        <li><a href="#">포트폴리오</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="aptitude.html">능력 검사</a>
+                    <a href="#">능력 검사</a>
                     <ul class="sub-menu">
                         <div class="sub-bar dt"></div>
                         <li><a href="aptitude.html">인적성 검사</a></li>
-                        <li><a href="aptitude.html">검사 실시</a></li>
-                        <li><a href="aptitude.html">결과 분석</a></li>
+                        <li><a href="#">검사 실시</a></li>
+                        <li><a href="#">결과 분석</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">일자리 찾기</a>    
-                    <ul class="sub-menu">
+                    <a href="#">일자리 찾기</a>
+                    <ul class="sub-menu dt">
                         <div class="sub-bar dt"></div>
                         <li><a href="#">일자리 검색</a></li>
                         <li><a href="#">자격증 검색</a></li>
                     </ul>
                 </li>
             </ul>
+
             <ul class="top-menu">
                 <li>
                     <a href="#">
@@ -82,22 +86,26 @@
             </ul>
         </nav>
     </header>
+	
+    <link rel="stylesheet" href="css/company.css">
+    <script src="js/com-script.js"></script>
 
     <div class="bn bn-bg">
+        <div class="txt-wrap">
             <h2><span class="txt-b">Company</span> Intro<span class="txt-none">duction</span></h2>
             <p><span class="txt-b">혁신</span>과 <span class="txt-b">가치</span>의 창출 선도 기업의 자신감</p>
+        </div>
     </div>
-
     <section>
         <div class="sub-title">
             <h3><span class="txt-b">Our</span> Company</h3>
-            <h4>기업 소개</h4>
+            <p>기업 소개</p>
         </div>
         <div class="com-wrap">
             <div class="com-bg"></div>
             <div class="com-con">
-                <h3>About Us</h3>
-                <h4>Fine Job 서비스</h4>
+                <h4>우리의 기업</h4>
+                <h5>Fine Job 서비스</h5>
                 <p>기업과 사람이 모이는 워크버스는
                    이곳에서 시작됩니다.</p>
                 <a href="#" class="btn">자세히 보기</a>
@@ -106,7 +114,7 @@
         <div class="slide">
             <div class="slide-title sub-title">
                 <h3><span class="txt-b">Services</span> Offered</h3>
-                <h4>점핏</h4>
+                <p>점핏</p>
             </div>
             <div class="slide-wrap">
                 <div class="slide-txt">
@@ -155,7 +163,7 @@
     <section>
         <div class="sub-title">
             <h3><span class="txt-b">Card</span> News</h3>
-            <h4>FineWork의 이야기</h4>
+            <p>FineWork의 이야기</p>
         </div>
         <div class="item-wrap">
             <div class="owl-carousel owl-theme">
@@ -200,52 +208,41 @@
         </div>
     </section>
     <footer>
-        <div class="foot-menu">
-            <ul class="foot-main-menu">
+        <div class="ft-container">
+            <ul class="ft-map">
                 <li>
-                    <a href="company.html">Intro</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="company.html">History</a></li>
-                        <li><a href="#">Invest</a></li>
-                        <li><a href="#">Finance</a></li>
-                    </ul>
+                    <h6>Intro</h6>
+                    <a href="company.html">History</a>
+                    <a href="#">Invest</a>
+                    <a href="#">Finance</a>
                 </li>
                 <li>
-                    <a href="support.html">Apply</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="support.html">Fund
-                        </a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Work</a></li>
-                    </ul>
+                    <h6>Apply</h6>
+                    <a href="support.html">Fund</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Work</a>
                 </li>
                 <li>
-                    <a href="aptitude.html">Test</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="aptitude.html">Traits
-                        </a></li>
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#">Result</a></li>
-                    </ul>
+                    <h6>Test</h6>
+                    <a href="aptitude.html">Traits</a>
+                    <a href="#">Start</a>
+                    <a href="#">Result</a>
                 </li>
                 <li>
-                    <a href="#">Search</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Certs</a></li>
-                    </ul>
+                    <h6>Search</h6>
+                    <a href="#">Jobs</a>
+                    <a href="#">Certs</a>
                 </li>
-            </ul>            
-        </div>
-
-        <div class="foot-txt">
-            <p>copyright © FineWork. All Rights Reserved.</p>
-
-            <ul class="i-con-box">
-                <li><a href="#" class="i-con"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" class="i-con"><i class="fa-brands fa-blogger-b"></i></a></li>
-                <li><a href="#" class="i-con"><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
+            </ul> 
+			
+            <div class="ft-txt">
+                <p>copyright © FineWork. All Rights Reserved.</p> 
+                <ul class="ft-btn">
+                    <li><a href="#" class="i-con"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="i-con"><i class="fa-brands fa-blogger-b"></i></a></li>
+                    <li><a href="#" class="i-con"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

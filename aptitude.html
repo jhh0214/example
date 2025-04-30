@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Occupational Aptitude Test</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
 	<script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="flexslider/flexslider.css">
-    <link rel="stylesheet" href="flexslider/fs-slider.css">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="textillate/animate.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
     <link rel="stylesheet" href="owlcarousel/carousel.css">
-	<link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common3.css">
-    <link rel="stylesheet" href="css/aptitude.css">
     <script src="js/jquery-1.12.4.js"></script>
-    <script src="flexslider/jquery.flexslider.js"></script>
+    <script src="js/common.js"></script>
     <script src="owlcarousel/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
+	<script src="textillate/jquery.textillate.js"></script>
+    <script src="textillate/jquery.fittext.js"></script>
+    <script src="textillate/jquery.lettering.js"></script>
 </head>
 <body>
+
     <header>
         <nav>
             <h1>
@@ -34,7 +36,7 @@
             
             <ul id="main-menu">
                 <li>
-                    <a href="company.html">기업 소개</a>
+                    <a href="#">기업 소개</a>
                     <ul class="sub-menu">
                         <div class="sub-bar dt"></div>               
                         <li><a href="company.html">개요 및 역사</a></li>
@@ -43,30 +45,30 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="support.html">취업 지원</a>
-                        <ul class="sub-menu">
-                            <div class="sub-bar dt"></div>
-                            <li><a href="support.html">취업 지원금</a></li>
-                            <li><a href="#">취업 후기</a></li>
-                            <li><a href="#">포트폴리오</a></li>
-                        </ul>
+                    <a href="#">취업 지원</a>
+                    <ul class="sub-menu">
+                        <div class="sub-bar dt"></div>
+                        <li><a href="support.html">취업 지원금</a></li>
+                        <li><a href="#">취업 후기</a></li>
+                        <li><a href="#">포트폴리오</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="aptitude.html">능력 검사</a>
-                        <ul class="sub-menu">
-                            <div class="sub-bar dt"></div>
-                            <li><a href="aptitude.html">인적성 검사</a></li>
-                            <li><a href="#">검사 실시</a></li>
-                            <li><a href="#">결과 분석</a></li>
-                        </ul>
+                    <a href="#">능력 검사</a>
+                    <ul class="sub-menu">
+                        <div class="sub-bar dt"></div>
+                        <li><a href="aptitude.html">인적성 검사</a></li>
+                        <li><a href="#">검사 실시</a></li>
+                        <li><a href="#">결과 분석</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">일자리 찾기</a>
-                        <ul class="sub-menu">
-                            <div class="sub-bar dt"></div>
-                            <li><a href="#">일자리 검색</a></li>
-                            <li><a href="#">자격증 검색</a></li>
-                        </ul>
+                    <ul class="sub-menu dt">
+                        <div class="sub-bar dt"></div>
+                        <li><a href="#">일자리 검색</a></li>
+                        <li><a href="#">자격증 검색</a></li>
+                    </ul>
                 </li>
             </ul>
 
@@ -85,6 +87,10 @@
             </ul>
         </nav>
     </header>
+	
+	
+
+    <link rel="stylesheet" href="css/aptitude.css">
 
     <div class="bn bn-apt-bg">
             <div class="bn-txt">
@@ -95,8 +101,8 @@
 
 	<section>   
         <div class="sub-title">
-            <h3>test <span>aptitude</span></h3>
-			<div class="sub-title-bar"></div>
+            <h3><span class="txt-n tb">test</span> aptitude</h3>
+            <div class="sub-title-bar tb"></div>
             <p>적성을 파악하여 직업군 추천</p>
         </div>
 
@@ -109,13 +115,13 @@
             </div>
             <div class="apt-mbti-bg"></div> 
         </div>
-		
-		<div class="sub-title">
-            <h3>Inspection<span> methods</span></h3>
-			<div class="sub-title-bar"></div>
+        
+        <div class="sub-title">
+            <h3><span class="txt-n tb">Inspection</span> methods</h3>
+            <div class="sub-title-bar tb"></div>
             <p>적성검사 방법</p>
         </div>
-
+	
         <div class="apt-tab-wrap">
             <input id="apt-btn" type="radio" name="tab-btn" checked>
             <label for="apt-btn" class="tab-label-1">적성검사</label>
@@ -126,7 +132,7 @@
             
 			<div class="tab-content">
 				<div class="tab-content-1">
-                    <div class="tab-image"> </div>
+                    <div class="tab-image"></div>
 					<div class="tab-text">
 						<h4>적성검사</h4>
 						<h5>국제 표준 검사지</h5>
@@ -164,10 +170,10 @@
 	</div>
 
 	<section>
-		<div class="sub-title">
-            <h3>test <span>results</span></h3>
-			<div class="sub-title-bar"></div>
-            <p>인성검사 시작 및 결과</p>
+        <div class="sub-title">
+            <h3><span class="txt-n tb">test</span> results</h3>
+            <div class="sub-title-bar tb"></div>
+            <p>인성검사 시작 및 결과 </p>
         </div>
 
 		<div class="item-wrap">
@@ -244,58 +250,48 @@
 						<a href="#" class="btn sup-stm-btn act">MORE</a>
 					</div>
 				</div>
-		</div>
+		    </div>
+        </div>
 	</section>
 
 
-	<footer>
-        <div class="foot-menu">
-            <ul class="foot-main-menu">
+    <footer>
+        <div class="ft-container">
+            <ul class="ft-map">
                 <li>
-                    <a href="company.html">Intro</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="company.html">History</a></li>
-                        <li><a href="#">Invest</a></li>
-                        <li><a href="#">Finance</a></li>
-                    </ul>
+                    <h6>Intro</h6>
+                    <a href="company.html">History</a>
+                    <a href="#">Invest</a>
+                    <a href="#">Finance</a>
                 </li>
                 <li>
-                    <a href="support.html">Apply</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="support.html">Fund
-                        </a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Work</a></li>
-                    </ul>
+                    <h6>Apply</h6>
+                    <a href="support.html">Fund</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Work</a>
                 </li>
                 <li>
-                    <a href="aptitude.html">Test</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="aptitude.html">Traits
-                        </a></li>
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#">Result</a></li>
-                    </ul>
+                    <h6>Test</h6>
+                    <a href="aptitude.html">Traits</a>
+                    <a href="#">Start</a>
+                    <a href="#">Result</a>
                 </li>
                 <li>
-                    <a href="#">Search</a>
-                    <ul class="foot-sub-menu">
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Certs</a></li>
-                    </ul>
+                    <h6>Search</h6>
+                    <a href="#">Jobs</a>
+                    <a href="#">Certs</a>
                 </li>
-            </ul>            
-        </div>
-
-        <div class="foot-txt">
-            <p>copyright © FineWork. All Rights Reserved.</p>
-
-            <ul class="i-con-box">
-                <li><a href="#" class="i-con"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" class="i-con"><i class="fa-brands fa-blogger-b"></i></a></li>
-                <li><a href="#" class="i-con"><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
+            </ul> 
+			
+            <div class="ft-txt">
+                <p>copyright © FineWork. All Rights Reserved.</p>
+    
+                <ul class="ft-btn">
+                    <li><a href="#" class="i-con"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="i-con"><i class="fa-brands fa-blogger-b"></i></a></li>
+                    <li><a href="#" class="i-con"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-</body>
 </html>

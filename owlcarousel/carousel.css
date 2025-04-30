@@ -18,7 +18,7 @@
     .item-wrap:hover .owl-prev {left: 0;}
     .item-wrap:hover .owl-next {right: 0;}
     
-    .item-wrap {width:1500px;  margin:0 auto; overflow:hidden;}
+    .item-wrap {width:1500px;  margin:0 auto 150px; overflow:hidden;}
 
     .owls-item {
         width:350px; height:500px;
@@ -89,7 +89,7 @@
     .item-wrap:hover .owl-prev {left: 0;}
     .item-wrap:hover .owl-next {right: 0;}
 
-    .item-wrap {width:1100px;  margin:0 auto; overflow:hidden;}
+    .item-wrap {width:1100px;  margin:0 auto 150px; overflow:hidden;}
 
     .owls-item {
         width:350px; height:500px;
@@ -117,11 +117,11 @@
 
     .owls-item-contents {position: relative; height:250px;}
     .owls-item-contents h5 {
-        padding-top: 22px; color:rgb(0, 0, 0); text-align:center; font-size: 28px;}
-    .owls-item-contents p {padding:15px 20px 30px; text-align:center;}
+        padding-top: 25px; color:rgb(0, 0, 0); text-align:center; font-size: 28px;}
+    .owls-item-contents p {padding:15px 35px 30px; text-align:center;}
     .owls-item-contents .btn {
         display:inline-block; position:absolute;
-        left: 50%; bottom: 25px;
+        left: 50%; bottom: 35px;
         text-align: center;
         transition:all 0.4s ease-in;
         transform:translate(-50%, 0);
@@ -175,7 +175,7 @@
     .owl-next { right:-100px;  transition: all 0.4s ease-in;}
     .owl-prev .bi, .owl-next .bi { font-size:42px; }
 
-    .item-wrap {width:730px;  margin:0 auto; overflow:hidden;}
+    .item-wrap {width:730px;  margin:0 auto 150px; overflow:hidden;}
 
     .owls-item {
         width:350px; height:500px;
@@ -203,11 +203,11 @@
 
     .owls-item-contents {position: relative; height:250px;}
     .owls-item-contents h5 {
-        padding-top: 22px; color:rgb(0, 0, 0); text-align:center; font-size: 24px;}
-    .owls-item-contents p {padding:15px 20px 30px; text-align:center; font-size: 15px;}
+        padding-top: 25px; color:rgb(0, 0, 0); text-align:center; font-size: 24px;}
+    .owls-item-contents p {padding:15px 35px 30px; text-align:center; font-size: 15px;}
     .owls-item-contents .btn {
         display:inline-block; position:absolute;
-        left: 50%; bottom: 25px;
+        left: 50%; bottom: 35px;
         text-align: center;
         transition:all 0.4s ease-in;
         transform:translate(-50%, 0);
@@ -289,11 +289,11 @@
 
     .owls-item-contents {position: relative; height:250px;}
     .owls-item-contents h5 {
-        padding-top: 22px; color:rgb(0, 0, 0); text-align:center; font-size: 24px;}
-    .owls-item-contents p {padding:15px 20px 30px; text-align:center; font-size: 15px;}
+        padding-top: 25px; color:rgb(0, 0, 0); text-align:center; font-size: 24px;}
+    .owls-item-contents p {padding:15px 35px 30px; text-align:center; font-size: 15px;}
     .owls-item-contents .btn {
         display:inline-block; position:absolute;
-        left: 50%; bottom: 25px;
+        left: 50%; bottom: 35px;
         text-align: center;
         transition:all 0.4s ease-in;
         transform:translate(-50%, 0);
@@ -336,8 +336,3 @@
     }
     .sup-stm-btn:hover::before { width:180%; }
 }
-
-
-
-
-
