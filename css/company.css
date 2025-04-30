@@ -369,7 +369,6 @@ h3 {font-size: 45px;}
     }
     p {font-size: 15px;}
 
-    .sub-title p,h4 {font-size: 20px; margin-left: 0;}
     .sub-title .txt-b {display: none;}
     .sub-title {margin: 55px 0 30px;}
     .btn {bottom: 30px;}
@@ -452,7 +451,7 @@ h3 {font-size: 45px;}
         padding: 0;
     }
 
-    .move h4 {margin-bottom: 0; text-align: center;}
+    .move h4 {margin-bottom: 0; text-align: center; font-size: 20px;}
     .move p {
         text-align: center;
     }

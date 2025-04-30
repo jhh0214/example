@@ -428,12 +428,11 @@
         position: absolute;
         top: 15px;
         width: 107px;    /* 버튼 너비 조정 */
-        height: 60px;    /* 버튼 높이 */
+        height: 50px;    /* 버튼 높이 */
         color: #2b2e4a;
         text-align: center;
-        line-height: 60px;
+        line-height: 50px;
         text-transform: uppercase;
-        
         background: linear-gradient(to bottom, #eee, #c9d2ea);
         z-index: 6;
         border-radius: 10px 10px 0px 0;
@@ -449,9 +448,9 @@
     /* 탭 콘텐츠 영역 조정 */
     .tab-content {
         position: relative;
-        top: 75px;       /* 버튼 아래로 충분한 공간 확보 */
+        top: 65px;       /* 버튼 아래로 충분한 공간 확보 */
         width: 330px;    /* 컨테이너보다 약간 작게 */
-        height: 535px;   /* 컨테이너에 맞게 조정 */
+        height: 545px;   /* 컨테이너에 맞게 조정 */
         margin: 0 auto;
         background: #f6f6f6;
         border-radius: 0 0px 10px 10px;
@@ -464,6 +463,7 @@
         opacity: 0;
         transition: all 0.5s ease-in-out;
     }    
+    input:checked + label { background: #f6f6f6; }
     #apt-btn:checked ~ .tab-content .tab-content-1,
     #test-btn:checked ~ .tab-content .tab-content-2,
     #rco-btn:checked ~ .tab-content .tab-content-3 {
