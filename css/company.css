@@ -371,6 +371,8 @@ h3 {font-size: 45px;}
 
     .sub-title .txt-b {display: none;}
     .sub-title {margin: 55px 0 30px;}
+    .sub-title p { margin-left : 0px; }
+    
     .btn {bottom: 30px;}
 
     html {
